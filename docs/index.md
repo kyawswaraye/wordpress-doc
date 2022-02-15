@@ -27,7 +27,25 @@ HTML ဆိုတာ Hyper Text Markup Language ကိုအတိုကော�
 `<h1>Hello World!</h1>`
 ကိုရေးကြည့်ပါ။
 
-<img src="./assets/img/html_1.1.png" alt="html" style="width:500px;" />
+```
+      <!DOCTYPE html>
+      <html lang="en">
+
+      <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Hello World</title>
+      </head>
+
+      <body>
+         <h1>Hello World!</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias
+            cum et? Laudantium culpa dicta deserunt iusto velit impedit ipsa?</p>
+      </body>
+
+      </html>
+```
 
 # Meta
 
@@ -37,22 +55,41 @@ HTML ဆိုတာ Hyper Text Markup Language ကိုအတိုကော�
 
 bullet list ဆိုတာက HTML element ထဲကနောက်ထပ် HTML element ဖြစ်တယ်။သူ့မှာ OrderList ရယ် UnorderList ဆိုပြီး ၂ ခုရှိတယ်။Menu ဆောက်တာတို့ List ပြတာတို့တွေမှာသုံးတယ်။
 
-<img src="./assets/img/html_1.2.png" alt="html" style="width:300px;" />
+```
+      <h1>OrderList</h1>
+      <ol>
+         <li>Title One</li>
+         <li>Title Two</li>
+         <li>Title Three</li>
+      </ol>
+      <h1>UnorderList</h1>
+      <ul>
+         <li>Title One</li>
+         <li>Title Two</li>
+         <li>Title Three</li>
+      </ul>
+```
 
 # href Attribute
 
 href attribute ဆိုတာက စာမျက်နှာတစ်ခုနဲ့ တစ်ခုချိတ်ဆက်ဖို့အတွက်အသုံးပြုတယ်။
 
 ```
-<a href="" ></a>
+      <a href="" ></a>
 ```
 
 `<a>` tag က hyperlink ဖြစ်ပြီး href attribute က link ကိုသွားတဲ့စာမျက်နှာရဲ့ url ကိုသတ်မှတ်ပေးတာဖြစ်တယ်။အောက်ကနမူနာပုံမှာ home page နဲ့ about page ကိုကူးပြောင်းနိုင်တဲ့ဥပမာဖြစ်ပါတယ်။
 
 index.html မှာ
 
-<img src="./assets/img/html_1.3.png" alt="html" style="width:300px;" />
+```
+      <a href="about.html">about</a>
+      <h1>This is home page.</h1>
+```
 
 about.html မှာ
 
-<img src="./assets/img/html_1.4.png" alt="html" style="width:300px;" />
+```
+      <a href="index.html">Home</a>
+      <h1>This is about page.</h1>
+```

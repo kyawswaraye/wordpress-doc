@@ -105,3 +105,51 @@ Add Video File
   <source src="video.mp4" type="video/mp4" />
 </video>
 ```
+
+### Text Basic
+
+**Heading**  
+heading တွေက h1 ကနေ h6 အထိရှိတယ်။page တစ်ခုမှာ h1 ကတစ်ခုပဲရှိသင့်တယ်။
+
+**Bold & Italic**  
+စာလုံးကို highlight ပြချင်ရင်က b နဲ့ strong နဲ့ ၂ ခုရှိတယ်။
+စာလုံးကို စောင်းစောင်းလေးနဲ့ပြချင်ရင်က em နဲ့ i ကိုသုံးတယ်။
+
+```html
+<b>The cat hate the dog.</b>
+<strong>The cat hate the dog.</strong>
+<em>The cat hate the dog.</em>
+<i>The cat hate the dog.</i>
+```
+
+> <b>The cat hate the dog.</b>  
+> <strong>The cat hate the dog.</strong>  
+> <em>The cat hate the dog.</em>  
+> <i>The cat hate the dog.</i>
+
+paragraph တစ်ခုလုံးကိုတော့ strong တို့ em တို့နဲ့မလုပ်သင့်ဘူး။ဘာလို့ဆိုတော့ html က element တွေကိုပဲရေးတာ။အဲ့လိုလုပ်ချင်ရင်က css နဲ့ရေးတာအကောင်းဆုံးပဲ။
+
+**Bullet List**  
+bullet list ဆိုတာက HTML element ထဲကနောက်ထပ် HTML element ဖြစ်တယ်။သူ့မှာ OrderList ရယ် UnorderList ဆိုပြီး ၂ ခုရှိတယ်။Menu ဆောက်တာတို့ List ပြတာတို့တွေမှာသုံးတယ်။
+
+```html
+<h1>OrderList</h1>
+<ol>
+  <li>Title One</li>
+  <li>Title Two</li>
+  <li>Title Three</li>
+</ol>
+<h1>UnorderList</h1>
+<ul>
+  <li>Title One</li>
+  <li>Title Two</li>
+  <li>Title Three</li>
+</ul>
+```
+
+**Special Characters**  
+ single quote, double quotes, ampersands, graterthan, lessthan, copyright, registered, treadmark ... ဒါတွေကိုက special character လို့ခေါ်တယ်။သူတို့ကိုရေးချင်ရင်က အောက်ကလိုမျိုးရေးတယ်။  
+` &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;`
+output
+
+> &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;

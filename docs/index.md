@@ -150,6 +150,51 @@ bullet list ဆိုတာက HTML element ထဲကနောက်ထပ် HT
 **Special Characters**  
  single quote, double quotes, ampersands, graterthan, lessthan, copyright, registered, treadmark ... ဒါတွေကိုက special character လို့ခေါ်တယ်။သူတို့ကိုရေးချင်ရင်က အောက်ကလိုမျိုးရေးတယ်။  
 ` &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;`
-output
+output-
 
 > &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;
+
+### semantics and organization
+
+**strature**
+
+```html
+<header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</header>
+<h1>My Website</h1>
+<p>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt voluptates
+  pariatur id possimus, aliquam laudantium provident praesentium totam maiores
+  similique?
+</p>
+<footer>
+  <p>&copy; 2022-This is footer of the Website</p>
+</footer>
+```
+
+**div**
+
+`<div></div>` ဆိုတာက element တွေကို division အနေနဲ့ပိုင်းပြီး css ဒါမှမဟုတ် javasctipt နဲ့တွဲသုံးလို့ရအောင်လုပ်ထားတာပါ။ ဥပမာပြောရရင်-
+
+```html
+<div class="block-body"><p>Title</p></div>
+<!-- block level elementဖြစ်တယ်။ -->
+<span class="text-color">content</span>
+<!-- inline element ဖြစ်တယ်။ -->
+```
+
+**comments**  
+comment ကိုမိမိမှတ်ချင်သောနေရာများတွင်ရေးခဲ့လို့ရတယ်။browser က comment တွေ့ရင်ကျော်သွားတာကြောင့် developer ပဲမြင်နိုင်မှာဖြစ်တယ်။
+
+```html
+<!-- this is content start -->
+<div>Title</div>
+<!-- this is content end -->
+```

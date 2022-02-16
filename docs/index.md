@@ -14,6 +14,8 @@
    5. [Text Basics](#text-basic)
    6. [Semantics and Organization](#semantics-and-organization)
    7. [HTML Form](#html-form)
+   8. [How to create a Table](#how-to-create-a-table)
+   9. [Emmet](#emmet)
 
 ## Introduction
 
@@ -283,3 +285,35 @@ checkboxes တွေဟာ radio button နဲ့ပုံစံဆင်သေ�
   <label for="dinner">Dinner</label>
 </fieldset>
 ```
+
+### How to create a Table
+
+table က row နဲ့ column နဲ့ဖွဲ့စည်းထားတဲ့ data အစုတစ်ခုဖြစ်တယ်။
+
+```html
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone no.</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>01 234 567 89</td>
+    <td>Lorem ipsum dolor sit amet.</td>
+  </tr>
+</table>
+```
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Phone no.</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>01 234 567 89</td>
+    <td>Lorem ipsum dolor sit amet.</td>
+  </tr>
+</table>

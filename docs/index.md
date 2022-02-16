@@ -12,13 +12,14 @@
    3. [href Attribute](#href-attribute)
    4. [Adding Media](#adding-media)
    5. [Text Basics](#text-basic)
-   6. [semantics and organization](#semantics-and-organization)
+   6. [Semantics and Organization](#semantics-and-organization)
+   7. [HTML Form](#html-form)
 
-### Introduction
+## Introduction
 
-### What is Website
+## What is Website
 
-### What is HTML
+## What is HTML
 
 HTML ဆိုတာ Hyper Text Markup Language ကိုအတိုကောက်ပြောတာဖြစ်တယ်။HTML က webpages များကို ဖန်တီးရန်အတွက် စံသတ်မှတ်ထားသော ဘာသာစကားဖြစ်တယ်။HTML မှာကအားလုံးကို elements နဲ့ဖွဲ့စည်းထားတယ်။ဘယ်လိုရေးထားတယ်ဆိုတာကို browser ကိုပြောပြထားတာဖြစ်တယ်။ဒီနေရာမှာ ခေါင်းစဉ် ရေးထားတယ်။ဒီမှာက စာပိုဒ် ၊ ဒီမှာက လင့် စသည်ဖြင့်ပြောပြတာဖြစ်တယ်။ဥပမာ-header,paragraph,etc...
 နားလည်ရမှာက HTML ဆိုတာ content တွေကိုရေးတာဖြစ်ပြီး css ဆိုတာက style တွေကိုရေးတာဖြစ်တယ်။
@@ -154,7 +155,7 @@ output-
 
 > &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;
 
-### semantics and organization
+### Semantics and Organization
 
 **strature**
 
@@ -197,4 +198,88 @@ comment ကိုမိမိမှတ်ချင်သောနေရာမျ
 <!-- this is content start -->
 <div>Title</div>
 <!-- this is content end -->
+```
+
+### HTML Form
+
+HTML form က user တွေထည့်သွင်းလိုက်တဲ့ အချက်အလက်များကို server သို့ပို့ပေးရန်အသုံးပြုတယ်။label မှာသုံးတဲ့ for က input ထဲက id နဲ့တူရမယ်။
+
+```html
+<form>
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" placeholder="name" />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" placeholder="password" />
+  <input type="submit" value="submit" />
+</form>
+```
+
+**Different Types of input**
+
+```html
+<input type="button" />
+<input type="checkbox" />
+<input type="color" />
+<input type="date" />
+<input type="datetime-local" />
+<input type="email" />
+<input type="file" />
+<input type="hidden" />
+<input type="image" />
+<input type="month" />
+<input type="number" />
+<input type="password" />
+<input type="radio" />
+<input type="range" />
+<input type="reset" />
+<input type="search" />
+<input type="submit" />
+<input type="tel" />
+<input type="text" />
+<input type="time" />
+<input type="url" />
+<input type="week" />
+```
+
+**Set of Option**
+
+**Select**  
+selected attribute က boolean ဖြစ်တယ်။
+
+```html
+<select name="favouriteColor" id="favouriteColor">
+  <option value="colorRed">Red</option>
+  <option value="colorGreen">Green</option>
+  <option value="colorBlue">Blue</option>
+</select>
+```
+
+**Radio**  
+Radio က boolean ဖြစ်တယ်။
+
+```html
+<fieldset>
+  <legend>What is Your Favourite Meal ?</legend>
+  <input type="radio" name="favouriteMeal" id="breakfast" value="meal" />
+  <label for="breakfast">Breakfast</label>
+  <input type="radio" name="favouriteMeal" id="lunch" value="meal" />
+  <label for="lunch">Lunch</label>
+  <input type="radio" name="favouriteMeal" id="dinner" value="meal" />
+  <label for="dinner">Dinner</label>
+</fieldset>
+```
+
+**Checkbox**  
+checkboxes တွေဟာ radio button နဲ့ပုံစံဆင်သော်လဲ radio မှာက တန်ဖိုးတစ်ခုပဲယူလို့ရပြီး checkboxes တွေမှာကတန်ဖိုးအားလုံးကိုယူလို့ရတယ်။
+
+```html
+<fieldset>
+  <legend>What is Your Favourite Meal ?</legend>
+  <input type="checkbox" name="favouriteMeal" id="breakfast" value="meal" />
+  <label for="breakfast">Breakfast</label>
+  <input type="checkbox" name="favouriteMeal" id="lunch" value="meal" />
+  <label for="lunch">Lunch</label>
+  <input type="checkbox" name="favouriteMeal" id="dinner" value="meal" />
+  <label for="dinner">Dinner</label>
+</fieldset>
 ```

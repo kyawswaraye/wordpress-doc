@@ -17,6 +17,10 @@
    8. [How to create a Table](#how-to-create-a-table)
    9. [Emmet](#emmet)
 4. [What is CSS](#what-is-css)
+   1. [Selector](#selector)
+   2. [Box Modal](#box-modal)
+   3. [Layout and Float](#layout-and-float)
+   4. [Styling Navigation Menu](#styling-navigation-menu)
 
 ## Introduction
 
@@ -397,12 +401,158 @@ h1 {
 
 css ရေးရင် property နဲ့ value ကိုတွဲပြီးရေးတယ်။
 
-### CSS Selector
+### Selector
 
-Type Selector ဆိုတာက element နာမည်တွေကို select လုပ်တာ။ဥပမာ- **_p_** ဆိုရင် **_p_** အကုန်လုံးကို select လုပ်လိုက်တာပါ။
+**Type Selector** ဆိုတာက element နာမည်တွေကို select လုပ်တာ။ဥပမာ- **_p_** ဆိုရင် **_p_** အကုန်လုံးကို select လုပ်လိုက်တာပါ။
 
-Descendent Selector ကတော့ `header p{color:green}` ဆိုပြီးတစ်ခုထဲကို select လုပ်ပါတယ်။ `header p span{color:red}` ဆိုပြီးစာလုံးတစ်လုံးချင်းစီကို ပြောင်းလို့ရပါတယ်။
+**Descendent Selector** ကတော့ `header p{color:green}` ဆိုပြီးတစ်ခုထဲကို select လုပ်ပါတယ်။ `header p span{color:red}` ဆိုပြီးစာလုံးတစ်လုံးချင်းစီကို ပြောင်းလို့ရပါတယ်။
 
 HTML မှာဘယ်လိုပဲ format ချထားပါစေ ပြန်ပြင်လို့ရတယ်။  
 `h1{font-size:200%; font-weight:bold;}`  
 body ကအားလုံးရဲ့ parent ဖြစ်တယ်။`body{color:yellow;}` ဆိုပြီး `footer{color:red}` ဆိုရင် override လုပ်လို့ရပါတယ်။ဒါပေမယ့် `footer p{color:green}` ကအဆင့်အမြင့်ဆုံးပဲ။အတိအကျညွန်းထားလို့။ပြီးရင် class လာမယ်။ပြီး id လာမယ်။
+
+### Box Modal
+
+```html
+<div class="box-a">Box A</div>
+<div class="box-b">Box B</div>
+```
+
+```css
+.box-a {
+  background-color: gray;
+  padding: 30px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+.box-b {
+  background-color: yellow;
+}
+```
+
+padding က အတွင်းကတွန်းတယ်။margin ကအပြင်ကိုကန်တယ်။
+
+**Width & Height**
+
+```css
+box-a {
+  width: 250px;
+  height: 250px;
+}
+box-b {
+  width: 250px;
+  height: 250px;
+}
+```
+
+width က 250+30+4 ဖြစ်နေလိုက်မယ်။padding ရယ် border ရယ်ကြောင့်။`box-sizing:border-box`ထည့်ထားပေးရင်တော့ padding တွေကိုပြန်ချိန်ပေးလိုက်တာ။
+
+### Layout and Float
+
+```html
+<div class="container">
+  <div>
+    <h1>Website Title</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto,
+      similique.
+    </p>
+  </div>
+  <div class="content-area">
+    <h3>Main Area</h3>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
+      laudantium veniam, accusamus, earum expedita recusandae nobis dolores
+      dicta voluptate, perferendis laborum officia enim? Iure ab odio
+      dignissimos dicta est corrupti?
+    </p>
+  </div>
+  <div class="sidebar">
+    <h3>This is a side bar</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptas
+      harum consequatur minima quidem delectus cupiditate magnam doloremque.
+    </p>
+  </div>
+  <div class="fix"></div>
+  <footer><p>This is the footer</p></footer>
+</div>
+```
+
+```css
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content-area {
+  width: 66%;
+  float: left;
+}
+.sidebar {
+  width: 34%;
+  float: right;
+}
+.fix {
+  clear: both;
+}
+```
+
+float ကိုသုံးတယ်ဆိုရင် **clear:both** ကမဖြစ်မနေထည့်ပေးရမယ်။
+
+### Styling Navigation Menu
+
+**navigation**
+
+```html
+<nav class="site-nav">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+```
+
+`.site-nav{ margin-top:20px; }` ကို margin-top ပေးတယ်။
+
+`.site-nav li{ list-style:none; display:inline; margin-right:5px; }`site-nav ထဲက list တွေအားလုံးကို select မှတ်လိုက်တာ။
+
+`.site-nav a{ text-decoration:none; color:#000; padding:10px 20px; }`
+site-nav ထဲက **a** ကို select မှတ်တယ်။
+
+`.site-nav a:hover{ background-color:#6565dd; }` site-nav ထဲက a ကို hover တင်တဲ့အချိန် background color ပြောင်းလိုက်တယ်။
+
+**Position**
+
+```html
+<div class="wrap-group">
+  <img src="https://picsum.photos/800/500" alt="#" />
+  <div class="content">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia asperiores
+      molestiae blanditiis exercitationem aperiam quidem dolorem nemo id quas
+      libero.
+    </p>
+  </div>
+</div>
+```
+
+```css
+.wrap-group {
+  position: relative;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 15px 25px;
+}
+.wrap-group img {
+  display: block;
+}
+```
+
+position absolute က အနီးဆုံးမှာရှိတဲ့ relative နေရာကိုသွားပါတယ်။relative မရှိရင် body နားကိုသွားပါတယ်။

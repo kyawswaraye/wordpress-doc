@@ -16,6 +16,7 @@
    7. [HTML Form](#html-form)
    8. [How to create a Table](#how-to-create-a-table)
    9. [Emmet](#emmet)
+4. [What is CSS](#what-is-css)
 
 ## Introduction
 
@@ -32,29 +33,33 @@ HTML ဆိုတာ Hyper Text Markup Language ကိုအတိုကော�
 `<h1>Hello World!</h1>`
 ကိုရေးကြည့်ပါ။
 
-```
-      <!DOCTYPE html>
-      <html lang="en">
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+  </head>
 
-      <head>
-         <meta charset="UTF-8">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>Hello World</title>
-      </head>
-
-      <body>
-         <h1>Hello World!</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias
-            cum et? Laudantium culpa dicta deserunt iusto velit impedit ipsa?</p>
-      </body>
-
-      </html>
+  <body>
+    <h1>Hello World!</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias
+      cum et? Laudantium culpa dicta deserunt iusto velit impedit ipsa?
+    </p>
+  </body>
+</html>
 ```
 
 ### Meta
 
-အပေါ်ကပုံထဲက `<meta>` ဆိုတာ HTML စာမျက်နှာထဲမှာ ထည့်သွင်းလိုက်သော data အချက်အလက်များဖြစ်တယ်။`<head></head>` အတွင်းမှာရေးရပြီး ထို data ကို browser ပေါ်တွင်ပြသမည်မဟုတ်သော်လဲ search engine များကထို data ကိုအသုံးပြုပြီးရှာဖွေကြပါသည်။
+အပေါ်ကပုံထဲက `<meta>` ဆိုတာ HTML စာမျက်နှာထဲမှာ ထည့်သွင်းလိုက်သော data အချက်အလက်များဖြစ်တယ်။`<head></head>` အတွင်းမှာရေးရပြီး ထို data ကို browser ပေါ်တွင်ပြသမည်မဟုတ်သော်လဲ search engine များကထို data ကိုအသုံးပြုပြီးရှာဖွေကြပါသည်။ Mobile မှာ စာလုံးတွေ scale ကြီးစေပြီးအဆင်ပြေပြေမြင်အောင် အောက်က တစ်ကြောင်းကိုထည့်ရပါမယ်။
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
 
 ### href Attribute
 
@@ -96,7 +101,10 @@ Add Audio File
 ```html
 <h1>Audio</h1>
 <audio controls>
-  <source src="music.mp3" type="audio/mpeg" />
+  <source
+    src="https://cdn.pixabay.com/download/audio/2021/10/26/audio_0c72f89df1.mp3"
+    type="audio/mpeg"
+  />
 </audio>
 ```
 
@@ -317,3 +325,84 @@ table က row နဲ့ column နဲ့ဖွဲ့စည်းထားတဲ�
     <td>Lorem ipsum dolor sit amet.</td>
   </tr>
 </table>
+
+### Emmet
+
+Emmet ဆိုတာ HTML tag တွေကို အတိုကောက်ရေးနည်းဖြစ်တယ်။ **_Html:5 (or) !_** ရေးပြီး tab ရိုက်လိုက်ရင်
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
+
+**div#hello** ဆိုရင်
+
+```html
+<div id="hello"></div>
+```
+
+**div.hello** ဆိုရင်
+
+```html
+<div class="hello"></div>
+```
+
+**div\*3** ဆိုရင်
+
+```html
+<div></div>
+<div></div>
+<div></div>
+```
+
+**ul.mylist>li\*4** ဆိုရင်
+
+```html
+<ul class="mylist">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+```
+
+## What is CSS
+
+css ဆိုတာ Cascading Style Sheets ကိုအတိုကောက်ပြောတာဖြစ်တယ်။css က HTML elements တွေကို မည်သည့်ပုံစံ အဖြစ်ပြမည်ဆိုတာကို ကြည့်ကောင်းအောင်ရေးသားခြင်းဖြစ်ပါတယ်။တစ်ခုမှတ်ရမှာက css ကရေစီးနေသလိုပဲ။နောက်မှရေးတာကအလုပ်လုပ်ပါတယ်။
+
+```html
+<header>
+  <h1 id="title">Title</h1>
+  <p>Lorem ipsum dolor sit amet.</p>
+  <p><span>Lorem ipsum dolor sit amet.</span></p>
+</header>
+<p class="highlight">Lorem ipsum dolor sit amet.</p>
+<footer><p>This is footer</p></footer>
+```
+
+```css
+h1 {
+  color: red;
+  text-align: center;
+}
+```
+
+css ရေးရင် property နဲ့ value ကိုတွဲပြီးရေးတယ်။
+
+### CSS Selector
+
+Type Selector ဆိုတာက element နာမည်တွေကို select လုပ်တာ။ဥပမာ- **_p_** ဆိုရင် **_p_** အကုန်လုံးကို select လုပ်လိုက်တာပါ။
+
+Descendent Selector ကတော့ `header p{color:green}` ဆိုပြီးတစ်ခုထဲကို select လုပ်ပါတယ်။ `header p span{color:red}` ဆိုပြီးစာလုံးတစ်လုံးချင်းစီကို ပြောင်းလို့ရပါတယ်။
+
+HTML မှာဘယ်လိုပဲ format ချထားပါစေ ပြန်ပြင်လို့ရတယ်။  
+`h1{font-size:200%; font-weight:bold;}`  
+body ကအားလုံးရဲ့ parent ဖြစ်တယ်။`body{color:yellow;}` ဆိုပြီး `footer{color:red}` ဆိုရင် override လုပ်လို့ရပါတယ်။ဒါပေမယ့် `footer p{color:green}` ကအဆင့်အမြင့်ဆုံးပဲ။အတိအကျညွန်းထားလို့။ပြီးရင် class လာမယ်။ပြီး id လာမယ်။

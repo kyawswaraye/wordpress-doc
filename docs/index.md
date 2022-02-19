@@ -22,6 +22,7 @@
    3. [Layout and Float](#layout-and-float)
    4. [Styling Navigation Menu](#styling-navigation-menu)
    5. [Typography](#Typography)
+   6. [Background-Image](#background-image)
 
 ## Introduction
 
@@ -580,6 +581,89 @@ lowercase, uppercase, underline ဆိုပြီး ၃မျိုးရှ�
 **Custom Fonts**  
 **fonts.google.com** မှာလိုချင်တဲ့ font ကိုရှာ။ပြီး link ကိုယူ။headထဲမှာ paste ချပြီး style ထဲမှာအောက်ပါအတိုင်းရေးပါမယ်။
 
+```html
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap"
+    rel="stylesheet"
+  />
+</head>
+```
+
 ```css
 font-family: "Gideon Roman", cursive;
 ```
+
+### Background-Image
+
+```css
+header {
+  background-color: #000;
+  background-image: url("https://picsum.photos/1000/600");
+  /* ပထမလာတာက x အတွက် နောက်တစ်ခုက y အတွက် */
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+}
+```
+
+ဒါမျိုးတွဲရေးလဲရတယ်။
+
+```css
+header {
+  background: #000 url("https://picsum.photos/1000/600") center center no-repeat;
+  background-size: cover;
+}
+```
+
+**Gradient Background**
+
+```css
+.sidebar {
+  background-image: linear-gradient(to bottom, #000, #fff);
+}
+```
+
+-**to bottom, to right, to bottom right** စသည်ဖြင့်အမျိုးမျိုးသုံးလို့ရပါတယ်။
+
+**Sprites**
+
+```html
+<nav class="menu">
+  <ul>
+    <li class="home"><a href="#">Home</a></li>
+    <li class="back"><a href="#">Back</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</nav>
+```
+
+```css
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+.menu li {
+  list-style: none;
+  margin-right: 15px;
+}
+.menu a {
+  display: block;
+  width: 43px;
+  height: 45px;
+  background-image: url("https://tipsmake.com/data/images/image-sprite-in-css-picture-1-8ZmnzP8nm.gif");
+  text-indent: 9999px;
+  background-repeat: no-repeat;
+}
+.home a {
+  background-position: -2px 0;
+}
+.back a {
+  background-position: -47px 0;
+}
+.next a {
+  background-position: -94px 0;
+}
+```
+
+**image spirits** သည်ပုံတစ်ပုံထဲတွင် ပုံငယ်လေးများကိုစုပြီးထည့်ထားခြင်းဖြစ်တယ်။ပုံအများကြီးထည့်တာက loading လုပ်ချိန်ကြာသည့်အတွက်တစ်ပုံထဲသုံးခြင်းဖြစ်တယ်။

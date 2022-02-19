@@ -23,6 +23,7 @@
    4. [Styling Navigation Menu](#styling-navigation-menu)
    5. [Typography](#Typography)
    6. [Background-Image](#background-image)
+   7. [Fixed Width Content](#fixed-width-content)
 
 ## Introduction
 
@@ -667,3 +668,25 @@ header {
 ```
 
 **image spirits** သည်ပုံတစ်ပုံထဲတွင် ပုံငယ်လေးများကိုစုပြီးထည့်ထားခြင်းဖြစ်တယ်။ပုံအများကြီးထည့်တာက loading လုပ်ချိန်ကြာသည့်အတွက်တစ်ပုံထဲသုံးခြင်းဖြစ်တယ်။
+
+### Fixed Width Content
+
+**Container**  
+ဘေးနှစ်ဖက်ကနေရာလွတ်တွေအတွက် **container** ကိုအသုံးပြုတယ်။
+
+```html
+<div class="container">
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia asperiores
+    molestiae blanditiis exercitationem aperiam quidem dolorem nemo id quas
+    libero.
+  </p>
+</div>
+```
+
+```css
+.container {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+```

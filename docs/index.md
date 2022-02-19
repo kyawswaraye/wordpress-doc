@@ -21,6 +21,7 @@
    2. [Box Modal](#box-modal)
    3. [Layout and Float](#layout-and-float)
    4. [Styling Navigation Menu](#styling-navigation-menu)
+   5. [Typography](#Typography)
 
 ## Introduction
 
@@ -556,3 +557,29 @@ site-nav ထဲက **a** ကို select မှတ်တယ်။
 ```
 
 position absolute က အနီးဆုံးမှာရှိတဲ့ relative နေရာကိုသွားပါတယ်။relative မရှိရင် body နားကိုသွားပါတယ်။
+
+### Typography
+
+**Font Family**
+font size ရဲ့ base line က 16px ရှိတယ်။**font-style:italic**, **font-weight:bold**, **letter-spacing:4px**, **word-spacing: 30px**, **text-shadow: 2px 2px 5px #000** စသည်ဖြင့်ရှိတယ်။text shadow မှာကတန်ဖိုး ၄ ခုရှိတယ်။ပထမတစ်ခုက horizontal ရဲ့ shadow ၊ ဒုတိယက vertical ၊ တတိရက blur ရဲ့ radius နဲ့ လေးခုမြောက်က color ရဲ့တန်ဖိုးဖြစ်ပါတယ်။
+
+**text-transform**  
+lowercase, uppercase, underline ဆိုပြီး ၃မျိုးရှိတယ်။
+
+**p** နဲ့ပတ်သတ်တဲ့ဟာတွေက font-size မှာ **em**, **rem**, **px**, **%** စသည်ဖြင့်သုံးတယ်။
+
+**text-align**  
+**left**, **right**, **center** ဆိုပြီး ၃မျိုးရှိတယ်။
+
+**text-indent**  
+ -**25px** စာပိုဒ်တွေရဲ့အရှေ့ကနေရာလွတ်လေး။
+
+**line-height**  
+-**1.5px** စာကြောင်းရဲ့အမြင့်။
+
+**Custom Fonts**  
+**fonts.google.com** မှာလိုချင်တဲ့ font ကိုရှာ။ပြီး link ကိုယူ။headထဲမှာ paste ချပြီး style ထဲမှာအောက်ပါအတိုင်းရေးပါမယ်။
+
+```css
+font-family: "Gideon Roman", cursive;
+```

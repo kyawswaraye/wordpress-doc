@@ -24,6 +24,7 @@
    5. [Typography](#Typography)
    6. [Background-Image](#background-image)
    7. [Fixed Width Content](#fixed-width-content)
+   8. [Responsive Web Design](#responsive-web-design)
 
 ## Introduction
 
@@ -690,3 +691,36 @@ header {
   margin-left: 100px;
 }
 ```
+
+### Responsive Web Design
+
+**media query**  
+Screen size တွေကအမျိုးမျိုးရှိတော့ အားလုံးနဲ့အဆင်ပြေပြီးကြည့်ကောင်းအောင် ရေးပေးရတယ်။အကြမ်းအားဖြင့် **xs=smart phone, sm=tablet, md=laptop, lg= desktop** စသည်ဖြင့်မှတ်ထားနိုင်တယ်။အချို့ ph resolution တွေက သာမာန် computer ထက်တောင်ပိုများနေတာမို့ အတိအကျမမှတ်ယူပါနဲ့။
+
+```html
+<div class="sidebar">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi
+    iure eum obcaecati itaque modi ducimus aut, adipisci eligendi reprehenderit
+    nisi, ipsum deleniti aliquid corporis.
+  </p>
+</div>
+```
+
+```css
+.sidebar {
+  width: 33%;
+}
+@media screen and (max-width: 960px) {
+  .sidebar {
+    width: auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+}
+```
+
+**min-width** လဲရှိတယ်။ph size အရွယ်ကနေစလုပ်မယ်ဆို min-width နဲ့သုံးတာကပိုအဆင်ပြေတယ်။

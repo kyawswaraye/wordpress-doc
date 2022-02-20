@@ -25,6 +25,8 @@
    6. [Background-Image](#background-image)
    7. [Fixed Width Content](#fixed-width-content)
    8. [Responsive Web Design](#responsive-web-design)
+   9. [Grid](#grid)
+   10. [Flex](#flex)
 
 ## Introduction
 
@@ -724,3 +726,107 @@ Screen size တွေကအမျိုးမျိုးရှိတော့ �
 ```
 
 **min-width** လဲရှိတယ်။ph size အရွယ်ကနေစလုပ်မယ်ဆို min-width နဲ့သုံးတာကပိုအဆင်ပြေတယ်။
+
+### Grid
+
+**12 columns grid** ဘာ design ကိုပဲဆွဲဆွဲ 12 နဲ့ပဲခွဲပါ။
+
+```html
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+```
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #b2d7f5;
+  gap: 20px;
+  padding: 10px;
+}
+.grid-item {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 20px;
+}
+```
+
+### Flex
+
+Flexbox Layout သည် float သို့မဟုတ် positioning ကိုအသုံးမပြုဘဲ responsive design များဆွဲဖို့အသုံးပြုကြတယ်။
+
+```html
+<div class="content">
+  <form>
+    <div class="form-row">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+    </div>
+  </form>
+</div>
+```
+
+```css
+.form-row {
+  padding: 10px 0;
+  display: flex;
+}
+.form-row label {
+  padding-right: 10px;
+}
+.form-row input {
+  flex: 1;
+}
+```
+
+**flex** က input ရှိနေရမည့် length ကို auto သတ်မှတ်ပေးတယ်။
+
+```html
+<div class="content">
+  <p>
+    Content ipsum dolor, sit amet consectetur adipisicing elit. Iure, similique
+    tempora? Rerum numquam quasi non recusandae optio! Maxime quidem sit sed
+    rem, quia porro minima repellendus nesciunt, consequuntur quos minus!
+  </p>
+</div>
+<div class="sidebar1">
+  <p>
+    Sidebar1 ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta
+    tempore aperiam rem vitae. Error!
+  </p>
+</div>
+<div class="sidebar2">
+  <p>
+    sidebar2 optio! Maxime quidem sit sed rem, quia porro minima repellendus
+    nesciunt, consequuntur quos minus!
+  </p>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+}
+.content {
+  flex: 1;
+}
+.sidebar1 {
+  flex: 1;
+}
+.sidebar2 {
+  flex: 1;
+}
+```
+
+**flex** ရဲ့ base က ၁ဆပဲ။ width ကိုပိုလိုချင်ရင် flex : 1, 2, 3 စသည်ဖြင့်ပြောင်းလို့ရတယ်။**order**: 1, 2, 3 စသည်ဖြင့်လိုချင်သလိုစီလို့ရတယ်။
+အကယ်လို့ column တွေများနေပြီး container ထဲမှာကျပ်နေရင် **flex-wrap: wrap** ဆိုပြီးနောက်တစ်ကြောင်းကို auto ဆင်းခိုင်းလိုက်လို့ရတယ်။

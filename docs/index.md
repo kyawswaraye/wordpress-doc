@@ -27,6 +27,7 @@
    8. [Responsive Web Design](#responsive-web-design)
    9. [Grid](#grid)
    10. [Flex](#flex)
+   11. [Box Shadow](#box-shadow)
 
 ## Introduction
 
@@ -830,3 +831,19 @@ Flexbox Layout သည် float သို့မဟုတ် positioning ကို
 
 **flex** ရဲ့ base က ၁ဆပဲ။ width ကိုပိုလိုချင်ရင် flex : 1, 2, 3 စသည်ဖြင့်ပြောင်းလို့ရတယ်။**order**: 1, 2, 3 စသည်ဖြင့်လိုချင်သလိုစီလို့ရတယ်။
 အကယ်လို့ column တွေများနေပြီး container ထဲမှာကျပ်နေရင် **flex-wrap: wrap** ဆိုပြီးနောက်တစ်ကြောင်းကို auto ဆင်းခိုင်းလိုက်လို့ရတယ်။
+
+### Box Shadow
+
+```css
+box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.15);
+```
+
+positon ပြောင်းချင်ရင် - နဲ့သုံးပါ။
+
+**Inner Shadow** ထည့်ချင်ရင်
+
+```css
+box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.15);
+```
+
+အကယ်လို့ ၂ခုလုံးသုံးချင်ရင် value ၂ခုကြားမှာ **comma** ထည့်ပါ။

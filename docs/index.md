@@ -27,7 +27,7 @@
    8. [Responsive Web Design](#responsive-web-design)
    9. [Grid](#grid)
    10. [Flex](#flex)
-   11. [Box Shadow](#box-shadow)
+   11. [Transform](#transform)
 
 ## Introduction
 
@@ -832,18 +832,71 @@ Flexbox Layout သည် float သို့မဟုတ် positioning ကို
 **flex** ရဲ့ base က ၁ဆပဲ။ width ကိုပိုလိုချင်ရင် flex : 1, 2, 3 စသည်ဖြင့်ပြောင်းလို့ရတယ်။**order**: 1, 2, 3 စသည်ဖြင့်လိုချင်သလိုစီလို့ရတယ်။
 အကယ်လို့ column တွေများနေပြီး container ထဲမှာကျပ်နေရင် **flex-wrap: wrap** ဆိုပြီးနောက်တစ်ကြောင်းကို auto ဆင်းခိုင်းလိုက်လို့ရတယ်။
 
-### Box Shadow
+### Transform
+
+1.rotate  
+2.scale  
+3.skew  
+ ဆိုပြီး ၃ မျိုးရှိတယ်။
+
+**Rotate**
 
 ```css
-box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.15);
+transform: rotate(25deg);
 ```
 
-positon ပြောင်းချင်ရင် - နဲ့သုံးပါ။
+0 to 360 deg ထိရှိပါတယ်။ - sign ပေးပြီးပြောင်းပြန်လဲလုပ်လို့ရတယ်။
 
-**Inner Shadow** ထည့်ချင်ရင်
+**Scale**
 
 ```css
-box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.15);
+transform: scale(1.5);
 ```
 
-အကယ်လို့ ၂ခုလုံးသုံးချင်ရင် value ၂ခုကြားမှာ **comma** ထည့်ပါ။
+**Skew**
+
+```css
+transform: skewX(30deg) skewY(30deg);
+```
+
+**Position(origin & placement)**
+
+```html
+<div class="container">
+  <div class="picture">
+    <h4>picture</h4>
+    <img class="picture" src="https://picsum.photos/400/300" alt="" />
+    <p class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tempore
+      est. Quia eaque, natus rerum a enim autem obcaecati omnis.
+    </p>
+  </div>
+</div>
+```
+
+```css
+.container {
+  margin: 0 auto;
+  width: 500px;
+  overflow: hidden;
+}
+.picture {
+  position: relative;
+  background-color: #301414;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+.content {
+  position: absolute;
+  left: 50px;
+  bottom: 25px;
+  width: 50%;
+  background-color: #0000009f;
+  transform: translateY(1000px);
+}
+.picture:hover .content {
+  transform: translateY(0);
+  transition: all ease 0.6s;
+}
+```

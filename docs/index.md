@@ -28,6 +28,7 @@
    9. [Grid](#grid)
    10. [Flex](#flex)
    11. [Transform](#transform)
+   12. [Transition](#transition)
 
 ## Introduction
 
@@ -900,3 +901,25 @@ transform: skewX(30deg) skewY(30deg);
   transition: all ease 0.6s;
 }
 ```
+
+### Transition
+
+```html
+<div class="box">circle</div>
+```
+
+```css
+.box {
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  transition: all ease 1s;
+}
+.box:hover {
+  transform: rotate(360deg);
+}
+```
+
+all က property, ease က method => in နဲ့ out ရှိတယ်။1s က duration

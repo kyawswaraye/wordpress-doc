@@ -1021,3 +1021,27 @@ all က property, ease က method => in နဲ့ out ရှိတယ်။1s �
   }
 }
 ```
+
+**Box Shadow**
+
+```css
+box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.15);
+```
+
+positon ပြောင်းချင်ရင် - နဲ့သုံးပါ။
+
+**Inner Shadow** ထည့်ချင်ရင်
+
+```css
+box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.15);
+```
+
+အကယ်လို့ ၂ခုလုံးသုံးချင်ရင် value ၂ခုကြားမှာ **comma** ထည့်ပါ။
+
+**Rounded Corner**
+
+```css
+border-radius: 10px;
+```
+
+value 4 ခုရှိတယ်။`border-radius:10px 25pxး` ဆိုရင် shape တွေလုပ်လို့ရတယ်။ စာလုံးအလယ်ရောက်ဖို့ဆို line-height ကို height နဲ့အတူတူပေးပါ။

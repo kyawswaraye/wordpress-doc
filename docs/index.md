@@ -29,6 +29,7 @@
    10. [Flex](#flex)
    11. [Transform](#transform)
    12. [Transition](#transition)
+   13. [Animation](#animation)
 
 ## Introduction
 
@@ -923,3 +924,100 @@ transform: skewX(30deg) skewY(30deg);
 ```
 
 all က property, ease က method => in နဲ့ out ရှိတယ်။1s က duration
+
+### Animation
+
+```html
+<div class="boxes">
+  <button class="box" id="box-1">Animation</button>
+  <button class="box" id="box-2">Animation</button>
+  <button class="box" id="box-3">Animation</button>
+  <button class="box" id="box-4">Animation</button>
+</div>
+```
+
+```css
+.boxes {
+  text-align: center;
+  margin-top: 200px;
+}
+.box {
+  opacity: 0;
+  animation: ani-effect 5s forwards;
+  width: 150px;
+  height: 50px;
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 10px;
+}
+@keyframes ani-effect {
+  0% {
+    opacity: 0;
+    transform: translateY(-500%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#box-1 {
+  animation-delay: 1s;
+}
+#box-2 {
+  animation-delay: 1.5s;
+}
+#box-3 {
+  animation-delay: 2s;
+}
+#box-4 {
+  animation-delay: 2.5s;
+}
+```
+
+```html
+<div class="star">
+  <svg viewBox="0 0 51 48">
+    <path
+      fill="yellow"
+      stroke="#000"
+      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
+    />
+  </svg>
+</div>
+```
+
+```css
+.star {
+  animation: slideStar 3s forwards;
+  width: 200px;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes slideStar {
+  50% {
+    transform: translateX(150%);
+    transform: scale(0.5);
+  }
+  75% {
+    transform: translateX(150%);
+    transform: scale(0.5);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: translateX(700%);
+  }
+}
+```

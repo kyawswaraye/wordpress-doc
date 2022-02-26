@@ -1205,3 +1205,22 @@ let num5 = 50;
 num5 /= 25;
 document.write(num5);
 ```
+
+**Logical Operator**
+
+```js
+==, === (equal to and equal value and equal type)
+! (NOT)
+&& (AND)
+|| (OR)
+```
+
+**Comparison Operator**
+
+```js
+!=, !== (not equal and not equal value or not equal type)
+< (less than)
+> (greater than)
+<= (less than or equal to)
+>= (greater than or equal to)
+```

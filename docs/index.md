@@ -30,6 +30,8 @@
    11. [Transform](#transform)
    12. [Transition](#transition)
    13. [Animation](#animation)
+5. [What is Javascript](#what-is-javascript)
+6. [Data types](#data-types)
 
 ## Introduction
 
@@ -1045,3 +1047,117 @@ border-radius: 10px;
 ```
 
 value 4 ခုရှိတယ်။`border-radius:10px 25pxး` ဆိုရင် shape တွေလုပ်လို့ရတယ်။ စာလုံးအလယ်ရောက်ဖို့ဆို line-height ကို height နဲ့အတူတူပေးပါ။
+
+## What is Javascript
+
+Javascript သည် HTML နှင့် CSS တို့နှင့်အတူ World Wide Web ၏ အဓိကနည်းပညာများထဲမှ တစ်ခုဖြစ်သည့် ပရိုဂရမ်းမင်းဘာသာစကားတစ်ခုဖြစ်သည်။ ဝဘ်ဆိုဒ်များ၏ 97% ကျော်သည် web page တွင် client ဖက်မှ JavaScript ကို အသုံးပြုကြသည်။browser အားလုံးတွင် javascript ကုဒ်ကို လုပ်ဆောင်နိုင်ရန် သီးခြား JavaScript အင်ဂျင်တစ်ခု ပါရှိသည်။JavaScript အင်ဂျင်များကို မူလက frontend များတွင်သာ အသုံးပြုခဲ့သော်လည်း ယခုအခါ backend ပိုင်းများတွင်ပါအသုံးပြုနိုင်လာပါတယ်။ဤအသုံးပြုမှုအတွက် ရေပန်းအစားဆုံး runtime စနစ်မှာ Node js ဖြစ်ပါတယ်။
+
+**what is variables**
+
+```js
+let name;
+name = 10;
+document.write(name);
+```
+
+variables are use for store data.
+
+### Data types
+
+data types က **Number**, **String**, **Boolean**, **Null**, **Undefined**, **Object** စသည်ဖြစ် ၆ မျိုးရှိပါတယ်။
+
+```javascript
+const dogs = 10;
+document.write(dogs);
+```
+
+**Number**
+
+```javascript
+const num = 100.123456;
+const fixNum = num.toFixed(2);
+console.log(fixNum);
+```
+
+```javascript
+const num = 2.567;
+const upNum = Math.ceil(num);
+console.log(upNum);
+Math.floor();
+```
+
+```javascript
+const x = 1;
+const y = 2;
+const z = -5;
+console.log(Math.min(x, y, z));
+Math.max();
+```
+
+```javascript
+const num = 12.49;
+const roundNum = Math.round(num);
+console.log(roundNum);
+```
+
+round()က အနီးစပ်ဆုံး ကိန်းပြည့်ကိုယူပေးတယ်။12.49ဆို 12 ကိုယူပြီး 12.5 ဆို 13 ကိုယူပါတယ်။
+
+```javascript
+const randomNum = Math.floor(Math.random() * 100);
+console.log(randomNum);
+```
+
+random()က 0 နဲ့ 1 ကြားထဲက ကိန်းကိုအမြဲ return ပြန်ပါတယ်။
+
+**String**
+
+```js
+const hello = "hello ";
+const world = "world";
+const both = hello + world;
+console.log(both);
+const upperCase = hello.toUpperCase();
+console.log(upperCase);
+const lowerCase = hello.toLowerCase();
+console.log(lowerCase);
+```
+
+quotation marks ပါရင် string ဖြစ်ပါတယ်။
+string တွင် + sign သည် string 2 ခုပေါင်းဖို့အသုံးပြုတယ်။
+
+```js
+const string = "HelloWorld";
+console.log(string.slice(0, 5));
+const stringAt = "My Name is Mg Mg";
+const x = stringAt.charAt(5);
+console.log(x);
+```
+
+**Booleans**
+
+```js
+const open = true;
+document.write(typeof open);
+```
+
+boolean မှာ true နဲ့ false ဆိုတဲ့တန်ဖိုး ၂ခု ရှိတယ်။
+
+**Undefined**
+
+```js
+let item;
+document.write(typeof item);
+```
+
+**Null**
+
+```js
+const item = null;
+document.write(typeof item);
+```
+
+null မှာ typeof နဲ့စစ်လဲ object ပဲရပါမည်။
+
+**Comment**  
+`// single line comment `  
+`/* */ multi line comment`

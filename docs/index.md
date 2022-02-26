@@ -33,6 +33,7 @@
 5. [What is Javascript](#what-is-javascript)
    1. [Data types](#data-types)
    2. [Operator](#operator)
+   3. [Conditional Statement](#conditional-statement)
 
 ## Introduction
 
@@ -1223,4 +1224,59 @@ document.write(num5);
 > (greater than)
 <= (less than or equal to)
 >= (greater than or equal to)
+```
+
+### Conditional Statement
+
+```js
+const animal = "dog";
+
+if (animal === "dog") {
+  console.log("dog like beef");
+}
+
+if (animal !== "dog") {
+  console.log("cat like fish");
+} else {
+  console.log("dog like beef");
+}
+
+const pet = "dog";
+
+if (pet === "cat") {
+  console.log("My pet is cat");
+} else if (pet === "dog") {
+  console.log("My pet is dog");
+} else {
+  console.log("My pet is not dog or cat");
+}
+```
+
+**Single Line Statement**
+
+```js
+const x = 10 < 100 ? "yes" : "no";
+console.log(x);
+
+10 < 100 ? alert("yes") : alert("no");
+```
+
+**Switch Statement**
+
+```js
+const pet = "dog";
+switch (pet) {
+  case "cat":
+    console.log("your pet is a " + pet);
+    break;
+  case "fish":
+    console.log("your pet is a " + pet);
+    break;
+  case "dog":
+    console.log("your pet is a " + pet);
+    break;
+  default:
+    console.log("your pet is not on the list");
+    break;
+}
 ```

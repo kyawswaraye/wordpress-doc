@@ -31,7 +31,8 @@
    12. [Transition](#transition)
    13. [Animation](#animation)
 5. [What is Javascript](#what-is-javascript)
-6. [Data types](#data-types)
+   1. [Data types](#data-types)
+   2. [Operator](#operator)
 
 ## Introduction
 
@@ -1161,3 +1162,46 @@ null မှာ typeof နဲ့စစ်လဲ object ပဲရပါမည်�
 **Comment**  
 `// single line comment `  
 `/* */ multi line comment`
+
+### Operator
+
+```js
+const calculate = 4 + 1 + 30 + 2 * 10;
+document.write(calculate);
+
+const remain = 5 % 4;
+document.write(remain);
+
+let num1 = 1;
+const x = num1++;
+document.write(num1);
+
+let num2 = 3;
+const y = num2--;
+document.write(num2);
+```
+
+**Compound Operators**  
+**+=**, **-=**, **%=**, **\*=**, **/=**
+
+```js
+let num1 = 5;
+num1 += 10;
+document.write(num1);
+
+let num2 = 10;
+num2 -= 10;
+document.write(num2);
+
+let num3 = 30;
+num3 %= 9;
+document.write(num3);
+
+let num4 = 4;
+num4 *= 9;
+document.write(num4);
+
+let num5 = 50;
+num5 /= 25;
+document.write(num5);
+```

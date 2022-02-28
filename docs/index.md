@@ -34,6 +34,7 @@
    1. [Data types](#data-types)
    2. [Operator](#operator)
    3. [Conditional Statement](#conditional-statement)
+   4. [Loop](#loop)
 
 ## Introduction
 
@@ -1278,5 +1279,38 @@ switch (pet) {
   default:
     console.log("your pet is not on the list");
     break;
+}
+```
+
+### Loop
+
+**while** , **do While** , **for** ဆိုပြီး ၃မျိုးရှိတယ်။
+
+**while**
+
+```js
+let num = 0;
+while (num < 20) {
+  console.log(num++);
+}
+```
+
+**do while**
+
+```js
+let num = 20;
+do {
+  num += 1;
+  console.log(num);
+} while (num < 20);
+```
+
+result က 21 ဖြစ်နေတယ်။သူကအရင်အလုပ်လုပ်ပြီးမှ condition စစ်လို့။
+
+**for**
+
+```js
+for (let i = 0; i < 20; i++) {
+  console.log(i);
 }
 ```

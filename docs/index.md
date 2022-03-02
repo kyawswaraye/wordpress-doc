@@ -35,6 +35,7 @@
    2. [Operator](#operator)
    3. [Conditional Statement](#conditional-statement)
    4. [Loop](#loop)
+   5. [Arrays](#arrays)
 
 ## Introduction
 
@@ -1312,5 +1313,100 @@ result က 21 ဖြစ်နေတယ်။သူကအရင်အလုပ်
 ```js
 for (let i = 0; i < 20; i++) {
   console.log(i);
+}
+```
+
+### Arrays
+
+```js
+const movies = ["Die Hard", "Speed", "Mulan", "World War Z"];
+console.log(movies[0]);
+
+const videos = new Array("Die Hard", "Speed", "Mulan", "World War Z");
+console.log(videos[2]);
+```
+
+array တွင် index number မှာ 0 ကစပါတယ်။
+
+**multidimensional array**
+
+```js
+const num = [1, 2, 3, 4];
+const minus = [-1, -2, -3, -4];
+const letters = ["a", "b", "c"];
+const words = [num, minus, letters];
+console.log(words[0]);
+console.log(words[1][2]);
+```
+
+JavaScript ရှိ multidimensional array များကို အခြားသော array အတွင်းရှိ arrays များဟု ခေါ်သည်။ array များကို array တစ်ခုအတွင်း ထည့်ထားရန် လိုအပ်ပြီး arrays များသည် multidimensional array တစ်ခုကဲ့သို့ အလုပ်လုပ်ပါသည်။
+
+**Array Methods**
+
+**Concat**
+
+```js
+const pets = ["dog", "cat", "fish"];
+console.log(pets.length);
+const birds = ["sparrow", "eagle", "parrot"];
+const animals = pets.concat(birds);
+console.log(animals);
+```
+
+concat က array 2 ခုကိုပေါင်းတာ။
+
+**Splice**
+
+```js
+animals.splice(3, 2);
+console.log(animals);
+// position 3 မှာ elements 2 ခုဖြုတ်တယ်။
+animals.splice(3, 0, "horse", "rabbit");
+console.log(animals);
+// position 3 မှာ elements 2 ခု ထည့်တယ်။
+```
+
+splice က array ကို ပေါင်းထည့်တာတွေဖြုတ်တာတွေလုပ်လို့ရတယ်။splice method က မူရင်း array ကို overwrite လုပ်လိုက်တယ်။
+
+**sort**
+
+```js
+const num = [5, 4, 1, 0, 3];
+console.log(num.sort());
+console.log(num.reverse());
+const num1 = [50, 3, 21, 1, 0, 30];
+console.log(num1.sort());
+console.log(
+  num1.sort((a, b) => {
+    return a - b;
+  })
+);
+```
+
+**pop**  
+pop က array ရဲ့နောက်ဆုံးတစ်လုံးကိုဖြုတ်တာ။
+num.pop();
+
+**shift**  
+shift က array ရဲ့ထိပ်ဆုံးတစ်လုံးကိုဖြုတ်တာ။
+num.shift();
+
+**unshift**  
+unshift က array ရဲ့ထိပ်ဆုံးတစ်လုံးကိုပေါင်းထည့်ပေးတာ။
+num.unshift();
+
+**push**  
+push က array ရဲ့နောက်ဆုံးတစ်လုံးကိုပေါင်းထည့်ပေးတာ။
+num.push();
+
+**Looping through array**
+
+```js
+const animals = ["dog", "cat", "fish", "rabbit"];
+for (i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+  if (animals[i] === "fish") {
+    console.log(animals[i] + " is in the list");
+  }
 }
 ```

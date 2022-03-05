@@ -36,6 +36,7 @@
    3. [Conditional Statement](#conditional-statement)
    4. [Loop](#loop)
    5. [Arrays](#arrays)
+   6. [Object](#object)
 
 ## Introduction
 
@@ -1058,7 +1059,7 @@ Javascript သည် HTML နှင့် CSS တို့နှင့်အတ�
 
 **what is variables**
 
-```js
+```javascript
 let name;
 name = 10;
 document.write(name);
@@ -1115,7 +1116,7 @@ random()က 0 နဲ့ 1 ကြားထဲက ကိန်းကိုအမ�
 
 **String**
 
-```js
+```javascript
 const hello = "hello ";
 const world = "world";
 const both = hello + world;
@@ -1129,7 +1130,7 @@ console.log(lowerCase);
 quotation marks ပါရင် string ဖြစ်ပါတယ်။
 string တွင် + sign သည် string 2 ခုပေါင်းဖို့အသုံးပြုတယ်။
 
-```js
+```javascript
 const string = "HelloWorld";
 console.log(string.slice(0, 5));
 const stringAt = "My Name is Mg Mg";
@@ -1139,7 +1140,7 @@ console.log(x);
 
 **Booleans**
 
-```js
+```javascript
 const open = true;
 document.write(typeof open);
 ```
@@ -1148,14 +1149,14 @@ boolean မှာ true နဲ့ false ဆိုတဲ့တန်ဖိုး �
 
 **Undefined**
 
-```js
+```javascript
 let item;
 document.write(typeof item);
 ```
 
 **Null**
 
-```js
+```javascript
 const item = null;
 document.write(typeof item);
 ```
@@ -1168,7 +1169,7 @@ null မှာ typeof နဲ့စစ်လဲ object ပဲရပါမည်�
 
 ### Operator
 
-```js
+```javascript
 const calculate = 4 + 1 + 30 + 2 * 10;
 document.write(calculate);
 
@@ -1187,7 +1188,7 @@ document.write(num2);
 **Compound Operators**  
 **+=**, **-=**, **%=**, **\*=**, **/=**
 
-```js
+```javascript
 let num1 = 5;
 num1 += 10;
 document.write(num1);
@@ -1211,7 +1212,7 @@ document.write(num5);
 
 **Logical Operator**
 
-```js
+```javascript
 ==, === (equal to and equal value and equal type)
 ! (NOT)
 && (AND)
@@ -1220,7 +1221,7 @@ document.write(num5);
 
 **Comparison Operator**
 
-```js
+```javascript
 !=, !== (not equal and not equal value or not equal type)
 < (less than)
 > (greater than)
@@ -1230,7 +1231,7 @@ document.write(num5);
 
 ### Conditional Statement
 
-```js
+```javascript
 const animal = "dog";
 
 if (animal === "dog") {
@@ -1256,7 +1257,7 @@ if (pet === "cat") {
 
 **Single Line Statement**
 
-```js
+```javascript
 const x = 10 < 100 ? "yes" : "no";
 console.log(x);
 
@@ -1265,7 +1266,7 @@ console.log(x);
 
 **Switch Statement**
 
-```js
+```javascript
 const pet = "dog";
 switch (pet) {
   case "cat":
@@ -1289,7 +1290,7 @@ switch (pet) {
 
 **while**
 
-```js
+```javascript
 let num = 0;
 while (num < 20) {
   console.log(num++);
@@ -1298,7 +1299,7 @@ while (num < 20) {
 
 **do while**
 
-```js
+```javascript
 let num = 20;
 do {
   num += 1;
@@ -1310,7 +1311,7 @@ result က 21 ဖြစ်နေတယ်။သူကအရင်အလုပ်
 
 **for**
 
-```js
+```javascript
 for (let i = 0; i < 20; i++) {
   console.log(i);
 }
@@ -1318,7 +1319,7 @@ for (let i = 0; i < 20; i++) {
 
 ### Arrays
 
-```js
+```javascript
 const movies = ["Die Hard", "Speed", "Mulan", "World War Z"];
 console.log(movies[0]);
 
@@ -1330,7 +1331,7 @@ array တွင် index number မှာ 0 ကစပါတယ်။
 
 **multidimensional array**
 
-```js
+```javascript
 const num = [1, 2, 3, 4];
 const minus = [-1, -2, -3, -4];
 const letters = ["a", "b", "c"];
@@ -1345,7 +1346,7 @@ JavaScript ရှိ multidimensional array များကို အခြာ�
 
 **Concat**
 
-```js
+```javascript
 const pets = ["dog", "cat", "fish"];
 console.log(pets.length);
 const birds = ["sparrow", "eagle", "parrot"];
@@ -1357,7 +1358,7 @@ concat က array 2 ခုကိုပေါင်းတာ။
 
 **Splice**
 
-```js
+```javascript
 animals.splice(3, 2);
 console.log(animals);
 // position 3 မှာ elements 2 ခုဖြုတ်တယ်။
@@ -1370,7 +1371,7 @@ splice က array ကို ပေါင်းထည့်တာတွေဖြ�
 
 **sort**
 
-```js
+```javascript
 const num = [5, 4, 1, 0, 3];
 console.log(num.sort());
 console.log(num.reverse());
@@ -1401,7 +1402,7 @@ num.push();
 
 **Looping through array**
 
-```js
+```javascript
 const animals = ["dog", "cat", "fish", "rabbit"];
 for (i = 0; i < animals.length; i++) {
   console.log(animals[i]);
@@ -1410,3 +1411,37 @@ for (i = 0; i < animals.length; i++) {
   }
 }
 ```
+
+### Object
+
+```javascript
+const person = {
+  name: "william",
+  age: 25,
+  gender: "male",
+  dob: function () {
+    console.log("25.12.2000");
+  },
+};
+console.log(person.name);
+person.dob();
+```
+
+object မှာ key နဲ့ value ရှိတယ်။
+
+```javascript
+const myobj = {
+  num: 2,
+  arrayList: [1, 2, 3, 4, 5],
+  innerObj: {
+    greeting: function () {
+      console.log("hello");
+    },
+  },
+};
+console.log(myobj.num);
+console.log(myobj.arrayList);
+myobj.innerObj.greeting();
+```
+
+object ထဲမှာ အမျိုးမျိုးထည့်လို့ရတယ်။array,object,function စသည်ဖြင့်ရှိပါတယ်။

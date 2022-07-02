@@ -1,1447 +1,276 @@
-# August Host သင်ရိုးညွန်း
+# Wordpress သင်ရိုးညွန်း
 
 - [About Us](https://www.augusthost.com/about)
 
 # Table of contents
 
 1. [Introduction](#introduction)
-2. [What is website](#what-is-website)
-3. [What is HTML](#what-is-html)
-   1. [Create Your First HTML file](#create-your-first-html-file)
-   2. [Meta](#meta)
-   3. [href Attribute](#href-attribute)
-   4. [Adding Media](#adding-media)
-   5. [Text Basics](#text-basic)
-   6. [Semantics and Organization](#semantics-and-organization)
-   7. [HTML Form](#html-form)
-   8. [How to create a Table](#how-to-create-a-table)
-   9. [Emmet](#emmet)
-4. [What is CSS](#what-is-css)
-   1. [Selector](#selector)
-   2. [Box Modal](#box-modal)
-   3. [Layout and Float](#layout-and-float)
-   4. [Styling Navigation Menu](#styling-navigation-menu)
-   5. [Typography](#Typography)
-   6. [Background-Image](#background-image)
-   7. [Fixed Width Content](#fixed-width-content)
-   8. [Responsive Web Design](#responsive-web-design)
-   9. [Grid](#grid)
-   10. [Flex](#flex)
-   11. [Transform](#transform)
-   12. [Transition](#transition)
-   13. [Animation](#animation)
-5. [What is Javascript](#what-is-javascript)
-   1. [Data types](#data-types)
-   2. [Operator](#operator)
-   3. [Conditional Statement](#conditional-statement)
-   4. [Loop](#loop)
-   5. [Arrays](#arrays)
-   6. [Object](#object)
+2. [What is wordpress](#what-is-wordpress)
+3. [Install Local](#install-local)
+4. [Login to Dashboard](#login-to-dashboard)
+5. [Change Password](#change-password)
+6. [Install Theme](#install-theme)
+7. [Plugins](#plugins)
+8. [Import Website](#import-website)
+9. [Change Site Title & Other](#change-site-title-&-other)
+10. [Edit Home Page](#edit-home-page)
+11. [Responsive Design](#responsive-design)
+12. [Edit Page](#edit-page)
+13. [Create Page](#create-page)
+14. [Edit Footer](#edit-footer)
+15. [Create Post](#create-post)
 
 ## Introduction
 
-## What is Website
+## What is Wordpress
 
-## What is HTML
+wordpress
 
-HTML ဆိုတာ Hyper Text Markup Language ကိုအတိုကောက်ပြောတာဖြစ်တယ်။HTML က webpages များကို ဖန်တီးရန်အတွက် စံသတ်မှတ်ထားသော ဘာသာစကားဖြစ်တယ်။HTML မှာကအားလုံးကို elements နဲ့ဖွဲ့စည်းထားတယ်။ဘယ်လိုရေးထားတယ်ဆိုတာကို browser ကိုပြောပြထားတာဖြစ်တယ်။ဒီနေရာမှာ ခေါင်းစဉ် ရေးထားတယ်။ဒီမှာက စာပိုဒ် ၊ ဒီမှာက လင့် စသည်ဖြင့်ပြောပြတာဖြစ်တယ်။ဥပမာ-header,paragraph,etc...
-နားလည်ရမှာက HTML ဆိုတာ content တွေကိုရေးတာဖြစ်ပြီး css ဆိုတာက style တွေကိုရေးတာဖြစ်တယ်။
+## Install Local
 
-### Create Your First HTML file
+[localwp.com](https://localwp.com) website ကိုသွားပြီး download button ကိုနိုပ်ပါမယ်။ကို့စက်နဲ့ကိုက်ညီတဲ့တစ်ခုကို download ရယူပါမယ်။localwp ကိုဘာလို့သွင်းရလဲဆိုတော့ ကိုယ့်စက်ထဲမှာပဲ website ကိုဆွဲလို့ရအောင်လုပ်တာပါ။အားလုံးပြီးပြီဆိုမှ hosting ဝယ်ပြီးတင်တာပါ။
+local ကို run ပြီး Create a new site ကိုနိုပ်ပါ။
 
-ဒီသင်ခန်းစာမှာတော့ website တစ်ခုလောက်ဆွဲရအောင်။ပထမဆုံး VS Code editor ကိုဖွင့်မယ်။Folder တစ်ခုဆောက်ပြီး index.html ဆိုတဲ့ file ဆောက်ပါ။
-`<h1>Hello World!</h1>`
-ကိုရေးကြည့်ပါ။
+<figure>
+<img src="./images/img-3.1.png" alt="img-3.1">
+<figcaption align = "center"><b>img _ 3.1</b></figcaption>
+</figure>
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
-  </head>
+**img \_ 3.1** ထဲက What's your site name နေရာမှာ ကိုထားချင်တဲ့နာမည်ကိုပေးပါမည်။
+continue နိုပ်ပါမယ်။
 
-  <body>
-    <h1>Hello World!</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestias
-      cum et? Laudantium culpa dicta deserunt iusto velit impedit ipsa?
-    </p>
-  </body>
-</html>
-```
+<figure>
+<img src="./images/img-3.2.png" alt="img-3.2">
+<figcaption align = "center"><b>img _ 3.2</b></figcaption>
+</figure>
 
-### Meta
-
-အပေါ်ကပုံထဲက `<meta>` ဆိုတာ HTML စာမျက်နှာထဲမှာ ထည့်သွင်းလိုက်သော data အချက်အလက်များဖြစ်တယ်။`<head></head>` အတွင်းမှာရေးရပြီး ထို data ကို browser ပေါ်တွင်ပြသမည်မဟုတ်သော်လဲ search engine များကထို data ကိုအသုံးပြုပြီးရှာဖွေကြပါသည်။ Mobile မှာ စာလုံးတွေ scale ကြီးစေပြီးအဆင်ပြေပြေမြင်အောင် အောက်က တစ်ကြောင်းကိုထည့်ရပါမယ်။
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-```
-
-### href Attribute
-
-href attribute ဆိုတာက စာမျက်နှာတစ်ခုနဲ့ တစ်ခုချိတ်ဆက်ဖို့အတွက်အသုံးပြုတယ်။
-
-```html
-<a href=""></a>
-```
+**img \_ 3.2** ထဲက **Preferred** ကိုပဲရွှေးပါမယ်။
 
-`<a>` tag က hyperlink ဖြစ်ပြီး href attribute က link ကိုသွားတဲ့စာမျက်နှာရဲ့ url ကိုသတ်မှတ်ပေးတာဖြစ်တယ်။အောက်ကနမူနာပုံမှာ home page နဲ့ about page ကိုကူးပြောင်းနိုင်တဲ့ဥပမာဖြစ်ပါတယ်။
+<figure>
+<img src="./images/img-3.3.png" alt="img-3.3">
+<figcaption align = "center"><b>img _ 3.3</b></figcaption>
+</figure>
 
-index.html မှာ
+**img \_ 3.3** ထဲက **Setup Wordpress** မှာ username နဲ့ password ကိုထည့်ပါမယ်။ပြီးရင် Add Site ကိုနိုပ်ပါမယ်။ထိုအခါ local မှ website ကို create လုပ်ပေးသွားပါမည်။
 
-```html
-<a href="about.html">about</a>
-<h1>This is home page.</h1>
-```
-
-about.html မှာ
-
-```html
-<a href="index.html">Home</a>
-<h1>This is about page.</h1>
-```
-
-### Adding Media
-
-images, videos, audios file တွေကို page မှာထည့်လို့ရတယ်။
-
-Add Image File
-
-```html
-<h1>Image</h1>
-<img src="https://picsum.photos/500/200" alt="picture-1" />
-```
-
-Add Audio File
-
-```html
-<h1>Audio</h1>
-<audio controls>
-  <source
-    src="https://cdn.pixabay.com/download/audio/2021/10/26/audio_0c72f89df1.mp3"
-    type="audio/mpeg"
-  />
-</audio>
-```
-
-Add Video File
-
-```html
-<h1>Video</h1>
-<video controls>
-  <source src="video.mp4" type="video/mp4" />
-</video>
-```
-
-### Text Basic
-
-**Heading**  
-heading တွေက h1 ကနေ h6 အထိရှိတယ်။page တစ်ခုမှာ h1 ကတစ်ခုပဲရှိသင့်တယ်။
-
-**Bold & Italic**  
-စာလုံးကို highlight ပြချင်ရင်က b နဲ့ strong နဲ့ ၂ ခုရှိတယ်။
-စာလုံးကို စောင်းစောင်းလေးနဲ့ပြချင်ရင်က em နဲ့ i ကိုသုံးတယ်။
-
-```html
-<b>The cat hate the dog.</b>
-<strong>The cat hate the dog.</strong>
-<em>The cat hate the dog.</em>
-<i>The cat hate the dog.</i>
-```
-
-> <b>The cat hate the dog.</b>  
-> <strong>The cat hate the dog.</strong>  
-> <em>The cat hate the dog.</em>  
-> <i>The cat hate the dog.</i>
-
-paragraph တစ်ခုလုံးကိုတော့ strong တို့ em တို့နဲ့မလုပ်သင့်ဘူး။ဘာလို့ဆိုတော့ html က element တွေကိုပဲရေးတာ။အဲ့လိုလုပ်ချင်ရင်က css နဲ့ရေးတာအကောင်းဆုံးပဲ။
-
-**Bullet List**  
-bullet list ဆိုတာက HTML element ထဲကနောက်ထပ် HTML element ဖြစ်တယ်။သူ့မှာ OrderList ရယ် UnorderList ဆိုပြီး ၂ ခုရှိတယ်။Menu ဆောက်တာတို့ List ပြတာတို့တွေမှာသုံးတယ်။
-
-```html
-<h1>OrderList</h1>
-<ol>
-  <li>Title One</li>
-  <li>Title Two</li>
-  <li>Title Three</li>
-</ol>
-<h1>UnorderList</h1>
-<ul>
-  <li>Title One</li>
-  <li>Title Two</li>
-  <li>Title Three</li>
-</ul>
-```
-
-**Special Characters**  
- single quote, double quotes, ampersands, graterthan, lessthan, copyright, registered, treadmark ... ဒါတွေကိုက special character လို့ခေါ်တယ်။သူတို့ကိုရေးချင်ရင်က အောက်ကလိုမျိုးရေးတယ်။  
-` &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;`
-output-
-
-> &apos; &quot; &amp; &lt; &gt; &copy; &reg; &trade;
-
-### Semantics and Organization
-
-**strature**
-
-```html
-<header>
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
-</header>
-<h1>My Website</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt voluptates
-  pariatur id possimus, aliquam laudantium provident praesentium totam maiores
-  similique?
-</p>
-<footer>
-  <p>&copy; 2022-This is footer of the Website</p>
-</footer>
-```
-
-**div**
-
-`<div></div>` ဆိုတာက element တွေကို division အနေနဲ့ပိုင်းပြီး css ဒါမှမဟုတ် javasctipt နဲ့တွဲသုံးလို့ရအောင်လုပ်ထားတာပါ။ ဥပမာပြောရရင်-
-
-```html
-<div class="block-body"><p>Title</p></div>
-<!-- block level elementဖြစ်တယ်။ -->
-<span class="text-color">content</span>
-<!-- inline element ဖြစ်တယ်။ -->
-```
-
-**comments**  
-comment ကိုမိမိမှတ်ချင်သောနေရာများတွင်ရေးခဲ့လို့ရတယ်။browser က comment တွေ့ရင်ကျော်သွားတာကြောင့် developer ပဲမြင်နိုင်မှာဖြစ်တယ်။
-
-```html
-<!-- this is content start -->
-<div>Title</div>
-<!-- this is content end -->
-```
-
-### HTML Form
-
-HTML form က user တွေထည့်သွင်းလိုက်တဲ့ အချက်အလက်များကို server သို့ပို့ပေးရန်အသုံးပြုတယ်။label မှာသုံးတဲ့ for က input ထဲက id နဲ့တူရမယ်။
-
-```html
-<form>
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name" placeholder="name" />
-  <label for="password">Password</label>
-  <input type="password" name="password" id="password" placeholder="password" />
-  <input type="submit" value="submit" />
-</form>
-```
-
-**Different Types of input**
-
-```html
-<input type="button" />
-<input type="checkbox" />
-<input type="color" />
-<input type="date" />
-<input type="datetime-local" />
-<input type="email" />
-<input type="file" />
-<input type="hidden" />
-<input type="image" />
-<input type="month" />
-<input type="number" />
-<input type="password" />
-<input type="radio" />
-<input type="range" />
-<input type="reset" />
-<input type="search" />
-<input type="submit" />
-<input type="tel" />
-<input type="text" />
-<input type="time" />
-<input type="url" />
-<input type="week" />
-```
-
-**Set of Option**
-
-**Select**  
-selected attribute က boolean ဖြစ်တယ်။
-
-```html
-<select name="favouriteColor" id="favouriteColor">
-  <option value="colorRed">Red</option>
-  <option value="colorGreen">Green</option>
-  <option value="colorBlue">Blue</option>
-</select>
-```
-
-**Radio**  
-Radio က boolean ဖြစ်တယ်။
-
-```html
-<fieldset>
-  <legend>What is Your Favourite Meal ?</legend>
-  <input type="radio" name="favouriteMeal" id="breakfast" value="meal" />
-  <label for="breakfast">Breakfast</label>
-  <input type="radio" name="favouriteMeal" id="lunch" value="meal" />
-  <label for="lunch">Lunch</label>
-  <input type="radio" name="favouriteMeal" id="dinner" value="meal" />
-  <label for="dinner">Dinner</label>
-</fieldset>
-```
-
-**Checkbox**  
-checkboxes တွေဟာ radio button နဲ့ပုံစံဆင်သော်လဲ radio မှာက တန်ဖိုးတစ်ခုပဲယူလို့ရပြီး checkboxes တွေမှာကတန်ဖိုးအားလုံးကိုယူလို့ရတယ်။
-
-```html
-<fieldset>
-  <legend>What is Your Favourite Meal ?</legend>
-  <input type="checkbox" name="favouriteMeal" id="breakfast" value="meal" />
-  <label for="breakfast">Breakfast</label>
-  <input type="checkbox" name="favouriteMeal" id="lunch" value="meal" />
-  <label for="lunch">Lunch</label>
-  <input type="checkbox" name="favouriteMeal" id="dinner" value="meal" />
-  <label for="dinner">Dinner</label>
-</fieldset>
-```
-
-### How to create a Table
-
-table က row နဲ့ column နဲ့ဖွဲ့စည်းထားတဲ့ data အစုတစ်ခုဖြစ်တယ်။
-
-```html
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Phone no.</th>
-    <th>Address</th>
-  </tr>
-  <tr>
-    <td>John Doe</td>
-    <td>01 234 567 89</td>
-    <td>Lorem ipsum dolor sit amet.</td>
-  </tr>
-</table>
-```
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Phone no.</th>
-    <th>Address</th>
-  </tr>
-  <tr>
-    <td>John Doe</td>
-    <td>01 234 567 89</td>
-    <td>Lorem ipsum dolor sit amet.</td>
-  </tr>
-</table>
-
-### Emmet
-
-Emmet ဆိုတာ HTML tag တွေကို အတိုကောက်ရေးနည်းဖြစ်တယ်။ **_Html:5 (or) !_** ရေးပြီး tab ရိုက်လိုက်ရင်
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
-```
-
-**div#hello** ဆိုရင်
-
-```html
-<div id="hello"></div>
-```
-
-**div.hello** ဆိုရင်
-
-```html
-<div class="hello"></div>
-```
-
-**div\*3** ဆိုရင်
-
-```html
-<div></div>
-<div></div>
-<div></div>
-```
-
-**ul.mylist>li\*4** ဆိုရင်
-
-```html
-<ul class="mylist">
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-```
-
-## What is CSS
-
-css ဆိုတာ Cascading Style Sheets ကိုအတိုကောက်ပြောတာဖြစ်တယ်။css က HTML elements တွေကို မည်သည့်ပုံစံ အဖြစ်ပြမည်ဆိုတာကို ကြည့်ကောင်းအောင်ရေးသားခြင်းဖြစ်ပါတယ်။တစ်ခုမှတ်ရမှာက css ကရေစီးနေသလိုပဲ။နောက်မှရေးတာကအလုပ်လုပ်ပါတယ်။
-
-```html
-<header>
-  <h1 id="title">Title</h1>
-  <p>Lorem ipsum dolor sit amet.</p>
-  <p><span>Lorem ipsum dolor sit amet.</span></p>
-</header>
-<p class="highlight">Lorem ipsum dolor sit amet.</p>
-<footer><p>This is footer</p></footer>
-```
-
-```css
-h1 {
-  color: red;
-  text-align: center;
-}
-```
-
-css ရေးရင် property နဲ့ value ကိုတွဲပြီးရေးတယ်။
-
-### Selector
-
-**Type Selector** ဆိုတာက element နာမည်တွေကို select လုပ်တာ။ဥပမာ- **_p_** ဆိုရင် **_p_** အကုန်လုံးကို select လုပ်လိုက်တာပါ။
-
-**Descendent Selector** ကတော့ `header p{color:green}` ဆိုပြီးတစ်ခုထဲကို select လုပ်ပါတယ်။ `header p span{color:red}` ဆိုပြီးစာလုံးတစ်လုံးချင်းစီကို ပြောင်းလို့ရပါတယ်။
-
-HTML မှာဘယ်လိုပဲ format ချထားပါစေ ပြန်ပြင်လို့ရတယ်။  
-`h1{font-size:200%; font-weight:bold;}`  
-body ကအားလုံးရဲ့ parent ဖြစ်တယ်။`body{color:yellow;}` ဆိုပြီး `footer{color:red}` ဆိုရင် override လုပ်လို့ရပါတယ်။ဒါပေမယ့် `footer p{color:green}` ကအဆင့်အမြင့်ဆုံးပဲ။အတိအကျညွန်းထားလို့။ပြီးရင် class လာမယ်။ပြီး id လာမယ်။
-
-### Box Modal
-
-```html
-<div class="box-a">Box A</div>
-<div class="box-b">Box B</div>
-```
-
-```css
-.box-a {
-  background-color: gray;
-  padding: 30px;
-  border: 2px solid #000;
-  margin-bottom: 20px;
-}
-.box-b {
-  background-color: yellow;
-}
-```
-
-padding က အတွင်းကတွန်းတယ်။margin ကအပြင်ကိုကန်တယ်။
-
-**Width & Height**
-
-```css
-box-a {
-  width: 250px;
-  height: 250px;
-}
-box-b {
-  width: 250px;
-  height: 250px;
-}
-```
-
-width က 250+30+4 ဖြစ်နေလိုက်မယ်။padding ရယ် border ရယ်ကြောင့်။`box-sizing:border-box`ထည့်ထားပေးရင်တော့ padding တွေကိုပြန်ချိန်ပေးလိုက်တာ။
-
-### Layout and Float
-
-```html
-<div class="container">
-  <div>
-    <h1>Website Title</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto,
-      similique.
-    </p>
-  </div>
-  <div class="content-area">
-    <h3>Main Area</h3>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
-      laudantium veniam, accusamus, earum expedita recusandae nobis dolores
-      dicta voluptate, perferendis laborum officia enim? Iure ab odio
-      dignissimos dicta est corrupti?
-    </p>
-  </div>
-  <div class="sidebar">
-    <h3>This is a side bar</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi voluptas
-      harum consequatur minima quidem delectus cupiditate magnam doloremque.
-    </p>
-  </div>
-  <div class="fix"></div>
-  <footer><p>This is the footer</p></footer>
-</div>
-```
-
-```css
-.container {
-  max-width: 960px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.content-area {
-  width: 66%;
-  float: left;
-}
-.sidebar {
-  width: 34%;
-  float: right;
-}
-.fix {
-  clear: both;
-}
-```
-
-float ကိုသုံးတယ်ဆိုရင် **clear:both** ကမဖြစ်မနေထည့်ပေးရမယ်။
-
-### Styling Navigation Menu
-
-**navigation**
-
-```html
-<nav class="site-nav">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</nav>
-```
-
-`.site-nav{ margin-top:20px; }` ကို margin-top ပေးတယ်။
-
-`.site-nav li{ list-style:none; display:inline; margin-right:5px; }`site-nav ထဲက list တွေအားလုံးကို select မှတ်လိုက်တာ။
-
-`.site-nav a{ text-decoration:none; color:#000; padding:10px 20px; }`
-site-nav ထဲက **a** ကို select မှတ်တယ်။
-
-`.site-nav a:hover{ background-color:#6565dd; }` site-nav ထဲက a ကို hover တင်တဲ့အချိန် background color ပြောင်းလိုက်တယ်။
-
-**Position**
-
-```html
-<div class="wrap-group">
-  <img src="https://picsum.photos/800/500" alt="#" />
-  <div class="content">
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia asperiores
-      molestiae blanditiis exercitationem aperiam quidem dolorem nemo id quas
-      libero.
-    </p>
-  </div>
-</div>
-```
-
-```css
-.wrap-group {
-  position: relative;
-}
-.content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 15px 25px;
-}
-.wrap-group img {
-  display: block;
-}
-```
-
-position absolute က အနီးဆုံးမှာရှိတဲ့ relative နေရာကိုသွားပါတယ်။relative မရှိရင် body နားကိုသွားပါတယ်။
-
-### Typography
-
-**Font Family**
-font size ရဲ့ base line က 16px ရှိတယ်။**font-style:italic**, **font-weight:bold**, **letter-spacing:4px**, **word-spacing: 30px**, **text-shadow: 2px 2px 5px #000** စသည်ဖြင့်ရှိတယ်။text shadow မှာကတန်ဖိုး ၄ ခုရှိတယ်။ပထမတစ်ခုက horizontal ရဲ့ shadow ၊ ဒုတိယက vertical ၊ တတိရက blur ရဲ့ radius နဲ့ လေးခုမြောက်က color ရဲ့တန်ဖိုးဖြစ်ပါတယ်။
-
-**text-transform**  
-lowercase, uppercase, underline ဆိုပြီး ၃မျိုးရှိတယ်။
-
-**p** နဲ့ပတ်သတ်တဲ့ဟာတွေက font-size မှာ **em**, **rem**, **px**, **%** စသည်ဖြင့်သုံးတယ်။
-
-**text-align**  
-**left**, **right**, **center** ဆိုပြီး ၃မျိုးရှိတယ်။
-
-**text-indent**  
- -**25px** စာပိုဒ်တွေရဲ့အရှေ့ကနေရာလွတ်လေး။
-
-**line-height**  
--**1.5px** စာကြောင်းရဲ့အမြင့်။
-
-**Custom Fonts**  
-**fonts.google.com** မှာလိုချင်တဲ့ font ကိုရှာ။ပြီး link ကိုယူ။headထဲမှာ paste ချပြီး style ထဲမှာအောက်ပါအတိုင်းရေးပါမယ်။
-
-```html
-<head>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap"
-    rel="stylesheet"
-  />
-</head>
-```
-
-```css
-font-family: "Gideon Roman", cursive;
-```
-
-### Background-Image
-
-```css
-header {
-  background-color: #000;
-  background-image: url("https://picsum.photos/1000/600");
-  /* ပထမလာတာက x အတွက် နောက်တစ်ခုက y အတွက် */
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 300px 100px;
-}
-```
-
-ဒါမျိုးတွဲရေးလဲရတယ်။
-
-```css
-header {
-  background: #000 url("https://picsum.photos/1000/600") center center no-repeat;
-  background-size: cover;
-}
-```
-
-**Gradient Background**
-
-```css
-.sidebar {
-  background-image: linear-gradient(to bottom, #000, #fff);
-}
-```
-
--**to bottom, to right, to bottom right** စသည်ဖြင့်အမျိုးမျိုးသုံးလို့ရပါတယ်။
-
-**Sprites**
-
-```html
-<nav class="menu">
-  <ul>
-    <li class="home"><a href="#">Home</a></li>
-    <li class="back"><a href="#">Back</a></li>
-    <li class="next"><a href="#">Next</a></li>
-  </ul>
-</nav>
-```
-
-```css
-.menu ul {
-  display: flex;
-  flex-direction: row;
-}
-.menu li {
-  list-style: none;
-  margin-right: 15px;
-}
-.menu a {
-  display: block;
-  width: 43px;
-  height: 45px;
-  background-image: url("https://tipsmake.com/data/images/image-sprite-in-css-picture-1-8ZmnzP8nm.gif");
-  text-indent: 9999px;
-  background-repeat: no-repeat;
-}
-.home a {
-  background-position: -2px 0;
-}
-.back a {
-  background-position: -47px 0;
-}
-.next a {
-  background-position: -94px 0;
-}
-```
-
-**image spirits** သည်ပုံတစ်ပုံထဲတွင် ပုံငယ်လေးများကိုစုပြီးထည့်ထားခြင်းဖြစ်တယ်။ပုံအများကြီးထည့်တာက loading လုပ်ချိန်ကြာသည့်အတွက်တစ်ပုံထဲသုံးခြင်းဖြစ်တယ်။
-
-### Fixed Width Content
-
-**Container**  
-ဘေးနှစ်ဖက်ကနေရာလွတ်တွေအတွက် **container** ကိုအသုံးပြုတယ်။
-
-```html
-<div class="container">
-  <p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia asperiores
-    molestiae blanditiis exercitationem aperiam quidem dolorem nemo id quas
-    libero.
-  </p>
-</div>
-```
-
-```css
-.container {
-  margin-right: 100px;
-  margin-left: 100px;
-}
-```
-
-### Responsive Web Design
-
-**media query**  
-Screen size တွေကအမျိုးမျိုးရှိတော့ အားလုံးနဲ့အဆင်ပြေပြီးကြည့်ကောင်းအောင် ရေးပေးရတယ်။အကြမ်းအားဖြင့် **xs=smart phone, sm=tablet, md=laptop, lg= desktop** စသည်ဖြင့်မှတ်ထားနိုင်တယ်။အချို့ ph resolution တွေက သာမာန် computer ထက်တောင်ပိုများနေတာမို့ အတိအကျမမှတ်ယူပါနဲ့။
-
-```html
-<div class="sidebar">
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit commodi
-    iure eum obcaecati itaque modi ducimus aut, adipisci eligendi reprehenderit
-    nisi, ipsum deleniti aliquid corporis.
-  </p>
-</div>
-```
-
-```css
-.sidebar {
-  width: 33%;
-}
-@media screen and (max-width: 960px) {
-  .sidebar {
-    width: auto;
-  }
-}
-@media screen and (max-width: 720px) {
-  .sidebar {
-    display: none;
-  }
-}
-```
-
-**min-width** လဲရှိတယ်။ph size အရွယ်ကနေစလုပ်မယ်ဆို min-width နဲ့သုံးတာကပိုအဆင်ပြေတယ်။
-
-### Grid
-
-**12 columns grid** ဘာ design ကိုပဲဆွဲဆွဲ 12 နဲ့ပဲခွဲပါ။
-
-```html
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div>
-</div>
-```
-
-```css
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #b2d7f5;
-  gap: 20px;
-  padding: 10px;
-}
-.grid-item {
-  text-align: center;
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 20px;
-}
-```
-
-### Flex
-
-Flexbox Layout သည် float သို့မဟုတ် positioning ကိုအသုံးမပြုဘဲ responsive design များဆွဲဖို့အသုံးပြုကြတယ်။
-
-```html
-<div class="content">
-  <form>
-    <div class="form-row">
-      <label for="name">Name:</label>
-      <input type="text" id="name" />
-    </div>
-  </form>
-</div>
-```
-
-```css
-.form-row {
-  padding: 10px 0;
-  display: flex;
-}
-.form-row label {
-  padding-right: 10px;
-}
-.form-row input {
-  flex: 1;
-}
-```
-
-**flex** က input ရှိနေရမည့် length ကို auto သတ်မှတ်ပေးတယ်။
-
-```html
-<div class="content">
-  <p>
-    Content ipsum dolor, sit amet consectetur adipisicing elit. Iure, similique
-    tempora? Rerum numquam quasi non recusandae optio! Maxime quidem sit sed
-    rem, quia porro minima repellendus nesciunt, consequuntur quos minus!
-  </p>
-</div>
-<div class="sidebar1">
-  <p>
-    Sidebar1 ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta
-    tempore aperiam rem vitae. Error!
-  </p>
-</div>
-<div class="sidebar2">
-  <p>
-    sidebar2 optio! Maxime quidem sit sed rem, quia porro minima repellendus
-    nesciunt, consequuntur quos minus!
-  </p>
-</div>
-```
-
-```css
-.container {
-  display: flex;
-}
-.content {
-  flex: 1;
-}
-.sidebar1 {
-  flex: 1;
-}
-.sidebar2 {
-  flex: 1;
-}
-```
-
-**flex** ရဲ့ base က ၁ဆပဲ။ width ကိုပိုလိုချင်ရင် flex : 1, 2, 3 စသည်ဖြင့်ပြောင်းလို့ရတယ်။**order**: 1, 2, 3 စသည်ဖြင့်လိုချင်သလိုစီလို့ရတယ်။
-အကယ်လို့ column တွေများနေပြီး container ထဲမှာကျပ်နေရင် **flex-wrap: wrap** ဆိုပြီးနောက်တစ်ကြောင်းကို auto ဆင်းခိုင်းလိုက်လို့ရတယ်။
-
-### Transform
-
-1.rotate  
-2.scale  
-3.skew  
- ဆိုပြီး ၃ မျိုးရှိတယ်။
-
-**Rotate**
-
-```css
-transform: rotate(25deg);
-```
-
-0 to 360 deg ထိရှိပါတယ်။ - sign ပေးပြီးပြောင်းပြန်လဲလုပ်လို့ရတယ်။
-
-**Scale**
-
-```css
-transform: scale(1.5);
-```
-
-**Skew**
-
-```css
-transform: skewX(30deg) skewY(30deg);
-```
-
-**Position(origin & placement)**
-
-```html
-<div class="container">
-  <div class="picture">
-    <h4>picture</h4>
-    <img class="picture" src="https://picsum.photos/400/300" alt="" />
-    <p class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, tempore
-      est. Quia eaque, natus rerum a enim autem obcaecati omnis.
-    </p>
-  </div>
-</div>
-```
-
-```css
-.container {
-  margin: 0 auto;
-  width: 500px;
-  overflow: hidden;
-}
-.picture {
-  position: relative;
-  background-color: #301414;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-}
-.content {
-  position: absolute;
-  left: 50px;
-  bottom: 25px;
-  width: 50%;
-  background-color: #0000009f;
-  transform: translateY(1000px);
-}
-.picture:hover .content {
-  transform: translateY(0);
-  transition: all ease 0.6s;
-}
-```
-
-### Transition
-
-```html
-<div class="box">circle</div>
-```
-
-```css
-.box {
-  text-align: center;
-  background-color: #f1f1f1;
-  width: 200px;
-  line-height: 200px;
-  border-radius: 50%;
-  transition: all ease 1s;
-}
-.box:hover {
-  transform: rotate(360deg);
-}
-```
-
-all က property, ease က method => in နဲ့ out ရှိတယ်။1s က duration
-
-### Animation
-
-```html
-<div class="boxes">
-  <button class="box" id="box-1">Animation</button>
-  <button class="box" id="box-2">Animation</button>
-  <button class="box" id="box-3">Animation</button>
-  <button class="box" id="box-4">Animation</button>
-</div>
-```
-
-```css
-.boxes {
-  text-align: center;
-  margin-top: 200px;
-}
-.box {
-  opacity: 0;
-  animation: ani-effect 5s forwards;
-  width: 150px;
-  height: 50px;
-  padding: 5px;
-  background-color: #ddd;
-  border-radius: 5px;
-  margin: 10px;
-}
-@keyframes ani-effect {
-  0% {
-    opacity: 0;
-    transform: translateY(-500%);
-  }
-  40% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  70% {
-    transform: translateY(0);
-  }
-  85% {
-    transform: translateY(-3px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-#box-1 {
-  animation-delay: 1s;
-}
-#box-2 {
-  animation-delay: 1.5s;
-}
-#box-3 {
-  animation-delay: 2s;
-}
-#box-4 {
-  animation-delay: 2.5s;
-}
-```
-
-```html
-<div class="star">
-  <svg viewBox="0 0 51 48">
-    <path
-      fill="yellow"
-      stroke="#000"
-      d="m25,1 6,17h18l-14,11 5,17-15-10-15,10 5-17-14-11h18z"
-    />
-  </svg>
-</div>
-```
-
-```css
-.star {
-  animation: slideStar 3s forwards;
-  width: 200px;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes slideStar {
-  50% {
-    transform: translateX(150%);
-    transform: scale(0.5);
-  }
-  75% {
-    transform: translateX(150%);
-    transform: scale(0.5);
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: translateX(700%);
-  }
-}
-```
-
-**Box Shadow**
-
-```css
-box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.15);
-```
-
-positon ပြောင်းချင်ရင် - နဲ့သုံးပါ။
-
-**Inner Shadow** ထည့်ချင်ရင်
-
-```css
-box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.15);
-```
-
-အကယ်လို့ ၂ခုလုံးသုံးချင်ရင် value ၂ခုကြားမှာ **comma** ထည့်ပါ။
-
-**Rounded Corner**
-
-```css
-border-radius: 10px;
-```
-
-value 4 ခုရှိတယ်။`border-radius:10px 25pxး` ဆိုရင် shape တွေလုပ်လို့ရတယ်။ စာလုံးအလယ်ရောက်ဖို့ဆို line-height ကို height နဲ့အတူတူပေးပါ။
-
-## What is Javascript
-
-Javascript သည် HTML နှင့် CSS တို့နှင့်အတူ World Wide Web ၏ အဓိကနည်းပညာများထဲမှ တစ်ခုဖြစ်သည့် ပရိုဂရမ်းမင်းဘာသာစကားတစ်ခုဖြစ်သည်။ ဝဘ်ဆိုဒ်များ၏ 97% ကျော်သည် web page တွင် client ဖက်မှ JavaScript ကို အသုံးပြုကြသည်။browser အားလုံးတွင် javascript ကုဒ်ကို လုပ်ဆောင်နိုင်ရန် သီးခြား JavaScript အင်ဂျင်တစ်ခု ပါရှိသည်။JavaScript အင်ဂျင်များကို မူလက frontend များတွင်သာ အသုံးပြုခဲ့သော်လည်း ယခုအခါ backend ပိုင်းများတွင်ပါအသုံးပြုနိုင်လာပါတယ်။ဤအသုံးပြုမှုအတွက် ရေပန်းအစားဆုံး runtime စနစ်မှာ Node js ဖြစ်ပါတယ်။
-
-**what is variables**
-
-```javascript
-let name;
-name = 10;
-document.write(name);
-```
-
-variables are use for store data.
-
-### Data types
-
-data types က **Number**, **String**, **Boolean**, **Null**, **Undefined**, **Object** စသည်ဖြစ် ၆ မျိုးရှိပါတယ်။
-
-```javascript
-const dogs = 10;
-document.write(dogs);
-```
-
-**Number**
-
-```javascript
-const num = 100.123456;
-const fixNum = num.toFixed(2);
-console.log(fixNum);
-```
-
-```javascript
-const num = 2.567;
-const upNum = Math.ceil(num);
-console.log(upNum);
-Math.floor();
-```
-
-```javascript
-const x = 1;
-const y = 2;
-const z = -5;
-console.log(Math.min(x, y, z));
-Math.max();
-```
-
-```javascript
-const num = 12.49;
-const roundNum = Math.round(num);
-console.log(roundNum);
-```
-
-round()က အနီးစပ်ဆုံး ကိန်းပြည့်ကိုယူပေးတယ်။12.49ဆို 12 ကိုယူပြီး 12.5 ဆို 13 ကိုယူပါတယ်။
-
-```javascript
-const randomNum = Math.floor(Math.random() * 100);
-console.log(randomNum);
-```
-
-random()က 0 နဲ့ 1 ကြားထဲက ကိန်းကိုအမြဲ return ပြန်ပါတယ်။
-
-**String**
-
-```javascript
-const hello = "hello ";
-const world = "world";
-const both = hello + world;
-console.log(both);
-const upperCase = hello.toUpperCase();
-console.log(upperCase);
-const lowerCase = hello.toLowerCase();
-console.log(lowerCase);
-```
-
-quotation marks ပါရင် string ဖြစ်ပါတယ်။
-string တွင် + sign သည် string 2 ခုပေါင်းဖို့အသုံးပြုတယ်။
-
-```javascript
-const string = "HelloWorld";
-console.log(string.slice(0, 5));
-const stringAt = "My Name is Mg Mg";
-const x = stringAt.charAt(5);
-console.log(x);
-```
-
-**Booleans**
-
-```javascript
-const open = true;
-document.write(typeof open);
-```
-
-boolean မှာ true နဲ့ false ဆိုတဲ့တန်ဖိုး ၂ခု ရှိတယ်။
-
-**Undefined**
-
-```javascript
-let item;
-document.write(typeof item);
-```
-
-**Null**
-
-```javascript
-const item = null;
-document.write(typeof item);
-```
-
-null မှာ typeof နဲ့စစ်လဲ object ပဲရပါမည်။
-
-**Comment**  
-`// single line comment `  
-`/* */ multi line comment`
-
-### Operator
-
-```javascript
-const calculate = 4 + 1 + 30 + 2 * 10;
-document.write(calculate);
-
-const remain = 5 % 4;
-document.write(remain);
-
-let num1 = 1;
-const x = num1++;
-document.write(num1);
-
-let num2 = 3;
-const y = num2--;
-document.write(num2);
-```
-
-**Compound Operators**  
-**+=**, **-=**, **%=**, **\*=**, **/=**
-
-```javascript
-let num1 = 5;
-num1 += 10;
-document.write(num1);
-
-let num2 = 10;
-num2 -= 10;
-document.write(num2);
-
-let num3 = 30;
-num3 %= 9;
-document.write(num3);
-
-let num4 = 4;
-num4 *= 9;
-document.write(num4);
-
-let num5 = 50;
-num5 /= 25;
-document.write(num5);
-```
-
-**Logical Operator**
-
-```javascript
-==, === (equal to and equal value and equal type)
-! (NOT)
-&& (AND)
-|| (OR)
-```
-
-**Comparison Operator**
-
-```javascript
-!=, !== (not equal and not equal value or not equal type)
-< (less than)
-> (greater than)
-<= (less than or equal to)
->= (greater than or equal to)
-```
-
-### Conditional Statement
-
-```javascript
-const animal = "dog";
-
-if (animal === "dog") {
-  console.log("dog like beef");
-}
-
-if (animal !== "dog") {
-  console.log("cat like fish");
-} else {
-  console.log("dog like beef");
-}
-
-const pet = "dog";
-
-if (pet === "cat") {
-  console.log("My pet is cat");
-} else if (pet === "dog") {
-  console.log("My pet is dog");
-} else {
-  console.log("My pet is not dog or cat");
-}
-```
-
-**Single Line Statement**
-
-```javascript
-const x = 10 < 100 ? "yes" : "no";
-console.log(x);
-
-10 < 100 ? alert("yes") : alert("no");
-```
-
-**Switch Statement**
-
-```javascript
-const pet = "dog";
-switch (pet) {
-  case "cat":
-    console.log("your pet is a " + pet);
-    break;
-  case "fish":
-    console.log("your pet is a " + pet);
-    break;
-  case "dog":
-    console.log("your pet is a " + pet);
-    break;
-  default:
-    console.log("your pet is not on the list");
-    break;
-}
-```
-
-### Loop
-
-**while** , **do While** , **for** ဆိုပြီး ၃မျိုးရှိတယ်။
-
-**while**
-
-```javascript
-let num = 0;
-while (num < 20) {
-  console.log(num++);
-}
-```
-
-**do while**
-
-```javascript
-let num = 20;
-do {
-  num += 1;
-  console.log(num);
-} while (num < 20);
-```
-
-result က 21 ဖြစ်နေတယ်။သူကအရင်အလုပ်လုပ်ပြီးမှ condition စစ်လို့။
-
-**for**
-
-```javascript
-for (let i = 0; i < 20; i++) {
-  console.log(i);
-}
-```
-
-### Arrays
-
-```javascript
-const movies = ["Die Hard", "Speed", "Mulan", "World War Z"];
-console.log(movies[0]);
-
-const videos = new Array("Die Hard", "Speed", "Mulan", "World War Z");
-console.log(videos[2]);
-```
-
-array တွင် index number မှာ 0 ကစပါတယ်။
-
-**multidimensional array**
-
-```javascript
-const num = [1, 2, 3, 4];
-const minus = [-1, -2, -3, -4];
-const letters = ["a", "b", "c"];
-const words = [num, minus, letters];
-console.log(words[0]);
-console.log(words[1][2]);
-```
-
-JavaScript ရှိ multidimensional array များကို အခြားသော array အတွင်းရှိ arrays များဟု ခေါ်သည်။ array များကို array တစ်ခုအတွင်း ထည့်ထားရန် လိုအပ်ပြီး arrays များသည် multidimensional array တစ်ခုကဲ့သို့ အလုပ်လုပ်ပါသည်။
-
-**Array Methods**
-
-**Concat**
-
-```javascript
-const pets = ["dog", "cat", "fish"];
-console.log(pets.length);
-const birds = ["sparrow", "eagle", "parrot"];
-const animals = pets.concat(birds);
-console.log(animals);
-```
-
-concat က array 2 ခုကိုပေါင်းတာ။
-
-**Splice**
-
-```javascript
-animals.splice(3, 2);
-console.log(animals);
-// position 3 မှာ elements 2 ခုဖြုတ်တယ်။
-animals.splice(3, 0, "horse", "rabbit");
-console.log(animals);
-// position 3 မှာ elements 2 ခု ထည့်တယ်။
-```
-
-splice က array ကို ပေါင်းထည့်တာတွေဖြုတ်တာတွေလုပ်လို့ရတယ်။splice method က မူရင်း array ကို overwrite လုပ်လိုက်တယ်။
-
-**sort**
-
-```javascript
-const num = [5, 4, 1, 0, 3];
-console.log(num.sort());
-console.log(num.reverse());
-const num1 = [50, 3, 21, 1, 0, 30];
-console.log(num1.sort());
-console.log(
-  num1.sort((a, b) => {
-    return a - b;
-  })
-);
-```
-
-**pop**  
-pop က array ရဲ့နောက်ဆုံးတစ်လုံးကိုဖြုတ်တာ။
-num.pop();
-
-**shift**  
-shift က array ရဲ့ထိပ်ဆုံးတစ်လုံးကိုဖြုတ်တာ။
-num.shift();
-
-**unshift**  
-unshift က array ရဲ့ထိပ်ဆုံးတစ်လုံးကိုပေါင်းထည့်ပေးတာ။
-num.unshift();
-
-**push**  
-push က array ရဲ့နောက်ဆုံးတစ်လုံးကိုပေါင်းထည့်ပေးတာ။
-num.push();
-
-**Looping through array**
-
-```javascript
-const animals = ["dog", "cat", "fish", "rabbit"];
-for (i = 0; i < animals.length; i++) {
-  console.log(animals[i]);
-  if (animals[i] === "fish") {
-    console.log(animals[i] + " is in the list");
-  }
-}
-```
-
-### Object
-
-```javascript
-const person = {
-  name: "william",
-  age: 25,
-  gender: "male",
-  dob: function () {
-    console.log("25.12.2000");
-  },
-};
-console.log(person.name);
-person.dob();
-```
-
-object မှာ key နဲ့ value ရှိတယ်။
-
-```javascript
-const myobj = {
-  num: 2,
-  arrayList: [1, 2, 3, 4, 5],
-  innerObj: {
-    greeting: function () {
-      console.log("hello");
-    },
-  },
-};
-console.log(myobj.num);
-console.log(myobj.arrayList);
-myobj.innerObj.greeting();
-```
-
-object ထဲမှာ အမျိုးမျိုးထည့်လို့ရတယ်။array,object,function စသည်ဖြင့်ရှိပါတယ်။
+<figure>
+<img src="./images/img-3.4.png" alt="img-3.4">
+<figcaption align = "center"><b>img _ 3.4</b></figcaption>
+</figure>
+
+**img \_ 3.4** ထဲက open site ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-3.5.png" alt="img-3.5">
+<figcaption align = "center"><b>img _ 3.5</b></figcaption>
+</figure>
+
+**img \_ 3.5** ထဲကအတိုင်း website တစ်ခုကိုရမည်ဖြစ်ပါသည်။
+
+## Login to Dashboard
+
+**wordpress dashboard** ထဲဝင်လိုပါက address bar မှာ wp-admin လို့ရိုက်ထည့်ရပါမယ်။ထို့နောက် **img_3.3** မှာဖြည့်ခဲ့တဲ့ username နဲ့ password ကိုဖြည့်ပြီးဝင်ပါမယ်။
+
+<figure>
+<img src="./images/img-4.1.png" alt="img-4.1">
+<figcaption align = "center"><b>img _ 4.1</b></figcaption>
+</figure>
+
+website ထဲပြန်သွားချင်ရင်က toolbar ထဲက home button ကိုနိုပ်ပြီး ပေါ်လာသော visit site ကိုနိုပ်ပါမယ်။
+
+## Change Password
+
+<figure>
+<img src="./images/img-5.1.png" alt="img-5.1">
+<figcaption align = "center"><b>img _ 5.1</b></figcaption>
+</figure>
+
+password change လိုပါက sidebar ထဲက users ကိုနိုပ်ပြီး **img\_ 5.1** အတိုင်း admin အောက်က edit ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-5.2.png" alt="img-5.2">
+<figcaption align = "center"><b>img _ 5.2</b></figcaption>
+</figure>
+
+scroll ဆွဲချပြီး **img_5.2** အတိုင်း Account Management အောက်က set new password ကိုနိုပ်ပြီး ကိုယ်ပြောင်းလိုတဲ့ password ကိုပြောင်းနိုင်ပါတယ်။ပြီးလျှင် အောက်ဆုံးက update profile ကိုနိုပ်ပြီးရင်ရပါပြီ။
+
+## Install Theme
+
+**Theme** ဆိုသည်မှာ website တစ်ခုကို မည့်သည့်ပုံစံဖြင့်ပြသမည်ဖြစ်ကြောင်း ပုံစံဖော်ပြထားခြင်းဖြစ်သည်။
+
+<figure>
+<img src="./images/img-6.1.png" alt="img-6.1">
+<figcaption align = "center"><b>img _ 6.1</b></figcaption>
+</figure>
+
+**Theme** အသစ်ထည့်ရင် **img_6.1** ပုံအတွင်းလိုမျိုး Dashboard => Appearance => Theme ထဲက Add New ကိုနိုပ်၍ ကိုယ်အသုံးပြုချင်သော Theme ကိုရှာပြီး install လုပ်ပါမယ်။ပြီးရင် Activate ကိုနိုပ်ပါမည်။
+
+## Plugins
+
+**Plugins** ဆိုတာက wordpress တွင်အသင့်ယူသုံး၍ရသော functions များဖြစ်ပါတယ်။ဥပမာ-အိမ်တစ်အိမ်တွင် TV ၊ ရေခဲသေတ္တာ၊ ပရိဘောဂ စသည့်အခြားသူများ လုပ်ထားပြီးသောအရာများကိုအဆင်သင့် ယူသုံးခြင်းဖြစ်ပါတယ်။**Plugins**သုံးဖို့အတွက် Dashboard => Plugins ကိုနိုပ်ပြီး Add new ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-7.1.png" alt="img-7.1">
+<figcaption align = "center"><b>img _ 7.1</b></figcaption>
+</figure>
+
+**img_7.1** အတိုင်း search box တွင် starter templates ကိုရှာပြီး install လုပ်ပါမည်။dashboard => pages ထဲသွား၍ page တွေကို delete လုပ်ပါမည်။
+
+## Import Website
+
+**Website Pages** များထည့်မည်ဆိုပါက Dashboard => Starter Templates ထဲဝင်၍ Build Your Website Now ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-8.1.png" alt="img-8.1">
+<figcaption align = "center"><b>img _ 8.1</b></figcaption>
+</figure>
+
+**img\_ 8.1** ထဲက Page Builder ရွှေးတဲ့နေရာမှာ Elementor ကိုနိုပ်ပြီး ကိုယ့်စိတ်တိုင်းကျတဲ့ page တစ်ခုကိုရွှေးပါ။
+
+<figure>
+<img src="./images/img-8.2.png" alt="img-8.2">
+<figcaption align = "center"><b>img _ 8.2</b></figcaption>
+</figure>
+
+**img_8.2** ထဲတွင် Logo ထည့်ချင်ပါကထည့်လို့ရပါတယ်။ထို့နောက် continue ကိုနိုပ်ပါ။
+
+<figure>
+<img src="./images/img-8.3.png" alt="img-8.3">
+<figcaption align = "center"><b>img _ 8.3</b></figcaption>
+</figure>
+
+**img_8.3** တွင် input box နေရာများတွင် data များဖြည့်သွင်း၍ Submit နိုပ်ပါမည်။
+
+## Change Site Title & Other
+
+<figure>
+<img src="./images/img-9.1.png" alt="img-9.1">
+<figcaption align = "center"><b>img _ 9.1</b></figcaption>
+</figure>
+
+**img_9.1** တွင် toolbar ထဲမှ customize ကိုနိုပ်ပါမယ်။
+
+Site Identity => Site Title & Logo Settings ထဲဝင်၍ Display Site Title ကိုဖွင့်ပါမယ်။Select Site Icon ကိုနိုပ်ပြီးလဲ ကိုထားချင်တဲ့ site icon ကိုထားလို့ရပါတယ်။Global => Typograph ကိုနိုပ်ပြီးကိုယ်ထားချင်တဲ့ Font ကိုရွှေးလို့ရပါတယ်။Global => Color ကိုနိုပ်ပြီး ကိုယ်ထားချင်တဲ့အရောင်ထားလို့ရပါတယ်။
+
+## Edit Home Page
+
+**Home Page** က website တစ်ခုရဲ့အဓိကအကျဆုံးအပိုင်းပဲဖြစ်ပါတယ်။အပေါ်ဖက်က Toolbar ထဲက Edit With Elementor ကိုနိုပ်၍ဝင်ရောက်ပြီဆိုပါက Sidebar အတွင်း၌ Widgets များကိုတွေ့မြင်ရမှာဖြစ်ပါတယ်။
+
+<figure>
+<img src="./images/img-10.1.png" alt="img-10.1">
+<figcaption align = "center"><b>img _ 10.1</b></figcaption>
+</figure>
+
+**img_10.1** တွင်ပြထားသည့်အတိုင်း ပြင်လိုသည့်စာသားများကို Double Click နိုပ်၍ ပြင်နိုင်ပါတယ်။Sidebar => Style ထဲတွင် စာလုံးအရောင်၊ Font စသည်ဖြင့် ကိုယ့်စိတ်တိုင်းကျ ပြုပြင်နိုင်ပါတယ်။
+
+<figure>
+<img src="./images/img-10.2.png" alt="img-10.2">
+<figcaption align = "center"><b>img _ 10.2</b></figcaption>
+</figure>
+
+**img_10.2** မှ **Learn More** button ကိုနိုပ်လိုက်ပြီး Sidebar => link ၏ input ထဲတွင် ကိုယ်သွားစေချင်သည့် Page ကိုညွန်း၍ ရပါတယ်။ about page ကိုသွားခိုင်းမည်ဆိုပါက Link တွင် about ကိုရွှေး၍ အောက်ဖက်ရှိ update button ကိုနိုပ်၍ save ပါမည်။
+
+<figure>
+<img src="./images/img-10.3.png" alt="img-10.3">
+<figcaption align = "center"><b>img _ 10.3</b></figcaption>
+</figure>
+
+Background image ပြောင်းလိုပါက image ပေါ်တွင် **img_10.3** အတိုင်း Right Click နိုပ်၍ Edit Section ကိုနိုပ်ပါမယ်။ထို့နောက် Sidebar => Style ထဲတွင် image ပေါ်ထောက်၍ Choose Image ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-10.4.png" alt="img-10.4">
+<figcaption align = "center"><b>img _ 10.4</b></figcaption>
+</figure>
+
+**img_10.4**ကလိုမျိုး upload file ကိုရွှေး၍ insert media ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-10.5.png" alt="img-10.5">
+<figcaption align = "center"><b>img _ 10.5</b></figcaption>
+</figure>
+
+အကယ်၍ background image နေရာတွင် video ဖြင့်ပြသလိုပါက ကိုယ်ထည့်ချင်သည့် Section ကိုသွား၍ Sidebar => Style => Background Type နေရာတွင် video ကိုရွှေး၍ Video Link input နေရာတွင် **img_10.5** အတိုင်းကိုယ်ထည့်ချင်သည့် video address ကိုထည့်ရပါမယ်။
+
+## Responsive Design
+
+Sidebar အောက်ဆုံးက Responsive Mode icon ကိုနိုပ်ပါမယ်။ထိုအခါ ညာဖက်ခြမ်းအပေါ်ဆုံးမှာ Destop, Tablet, Mobile စသည့် icon လေးတွေကိုတွေ့ရပါမယ်။ 3 မျိုးလုံးနဲ့ကြည့်လို့ကောင်းအောင် ပြင်ရမှာဖြစ်ပါတယ်။
+
+## Edit Page
+
+<figure>
+<img src="./images/img-12.1.png" alt="img-12.1">
+<figcaption align = "center"><b>img _ 12.1</b></figcaption>
+</figure>
+
+Elementor ကနေထွက်ပြီး Website ကိုပြန်သွားပါမယ်။Toolbar ထဲက Edit With Elementor ကိုပြန်နိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-12.2.png" alt="img-12.2">
+<figcaption align = "center"><b>img _ 12.2</b></figcaption>
+</figure>
+
+မိမိ Effect ထည့်ချင်သော Element ကိုရွှေး၍ **img_12.2** အတိုင်း Sidebar => Advanced => Motion Effect => Entrance Animation ထဲတွင် ကြိုက်နှစ်သက်ရာ Effect ကိုယူသုံးလို့ရပါတယ်။
+
+<figure>
+<img src="./images/img-12.3.png" alt="img-12.3">
+<figcaption align = "center"><b>img _ 12.3</b></figcaption>
+</figure>
+
+mouse တင်လိုက်သည့်နေရာများတွင် Effect ထည့်ချင်ပါက ထည့်လိုသည့်နေရာတွင် Click နိုပ်၍ Sidebar => Style => Hover => Hover Animation ထဲကနှစ်သက်ရာကိုရွှေးယူနိုင်ပါတယ်။
+
+## Create Page
+
+<figure>
+<img src="./images/img-13.1.png" alt="img-13.1">
+<figcaption align = "center"><b>img _ 13.1</b></figcaption>
+</figure>
+
+စာမျက်နှာအသစ်များလုပ်လိုပါက **img_13.1** တွင်ပြထားသည့်အတိုင်း Dashboard => Pages => Add New ကိုနိုပ်ပါမယ်။New Page ထဲရောက်သွားပါက Add Title မှာကိုယ်ထားလိုတဲ့နာမည်ကိုရေးပါမယ်။Edit With Elementor ကိုနိုပ်ပါမယ်။Drag Widget Here ထဲရှိ Add Template ကိုနိုပ်ပါမယ်။Blocks ထဲက မိမိကြိုက်နှစ်သက်ရာများကို insert လုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-13.2.png" alt="img-13.2">
+<figcaption align = "center"><b>img _ 13.2</b></figcaption>
+</figure>
+
+ထို့နောက် update လုပ်ပြီး Dashboard ကိုပြန်သွားပါမယ်။
+
+<figure>
+<img src="./images/img-13.3.png" alt="img-13.3">
+<figcaption align = "center"><b>img _ 13.3</b></figcaption>
+</figure>
+
+**img_13.3** အတိုင်း Dashboard => Appearance => Menus မှာ Our Team ကို Select လုပ်ပြီး Add to Menu ကိုနိုပ်ပါမယ်။အောက်ဖက်ထောင့်က Save Menu ကိုနိုပ်ပါမယ်။Website ကိုပြန်သွားသည့်အခါ Menu ထဲတွင် Our Team အသစ်တစ်ခုတိုးလာတာကိုတွေ့ရပါမယ်။ထို့နောက် Customize => Header Builder => Header Typed => Transparent Header ထဲဝင်ပြီး Enable On Complete Website ကိုနိုပ်ပါက Header Background က Transparent အဖြစ်ပြောင်းသွားမည်ဖြစ်ပါတယ်။
+
+<figure>
+<img src="./images/img-13.4.png" alt="img-13.4">
+<figcaption align = "center"><b>img _ 13.4</b></figcaption>
+</figure>
+
+Menu ပြင်ဖို့အတွက် **img_13.4** အတိုင်း Customize ကိုနိုပ်ပါမယ်။ထို့နောက် Take Action Button ရှိ Edit icon ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-13.5.png" alt="img-13.5">
+<figcaption align = "center"><b>img _ 13.5</b></figcaption>
+</figure>
+
+**img_13.5** အတိုင်း Button ဘေးက Remove Element ကိုနိုပ်ပါမယ်။ထို့နောက် Sidebar => Published ကိုနိုပ်ပါမယ်။
+
+## Edit Footer
+
+<figure>
+<img src="./images/img-14.1.png" alt="img-14.1">
+<figcaption align = "center"><b>img _ 14.1</b></figcaption>
+</figure>
+
+Footer ပြင်ဖို့အတွက် Toolbar ရှိ Customize ကိုနိုပ်ပါမယ်။ ထို့နောက် **img_14.1** အတိုင်း Sidebar => Footer Builder => Widget 1 ကိုနိုပ်ပြီး address တွေကိုပြင်ပါမယ်။Published နိုပ်ပြီးပြန်ထွက်ပါမယ်။
+
+## Create Post
+
+Dashboard => Plugins => Add New ကိုနိုပ်ပြီး Classic Editor ကို install လုပ်ပါမယ်။post အသစ်တစ်ခု create လုပ်မည်ဆိုပါက Dashboard => Posts => Add New ကိုနိုပ်ပါမယ်။
+
+<figure>
+<img src="./images/img-15.1.png" alt="img-15.1">
+<figcaption align = "center"><b>img _ 15.1</b></figcaption>
+</figure>
+
+ထို့နောက် **img_15.1** အတိုင်း Title, Paragraph, Featured Image စသည်တို့ကို ဖြည့်ပြီး Publish Button ကိုနိုပ်ပါမယ်။

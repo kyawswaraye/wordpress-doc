@@ -293,7 +293,7 @@ Dashboard => Plugins => Add New ကိုနိုပ်ပြီး Classic Edi
 Plugins => Add New => The Post Grid ကို install လုပ်ပါမယ်။
 
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.3.png" alt="img-15.3">
+<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.3a.png" alt="img-15.3">
 <figcaption align = "center"><b>img _ 15.3</b></figcaption>
 </figure>
 
@@ -301,14 +301,14 @@ The Post Grid => မှာကိုယ်ကြိုက်တဲ့နာမည
 မိမိပြလိုသော page မှာ Short Code ကို paste သွားချပေးရပါမယ်။
 
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.4.png" alt="img-15.4">
+<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.4a.png" alt="img-15.4">
 <figcaption align = "center"><b>img _ 15.4</b></figcaption>
 </figure>
 
 sidebar ထဲက short code ထည့်လို့ရသော box ကိုယူပေးရပါမယ်။Short Code => Enter Your Short Code box ထဲတွင် ခုဏက copy ယူထားတဲ့ short code ကို paste ချပါမယ်။
 
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.5.png" alt="img-15.5">
+<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.5a.png" alt="img-15.5">
 <figcaption align = "center"><b>img _ 15.5</b></figcaption>
 </figure>
 

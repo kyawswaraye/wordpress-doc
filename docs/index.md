@@ -308,7 +308,7 @@ The Post Grid => မှာကိုယ်ကြိုက်တဲ့နာမည
 sidebar ထဲက short code ထည့်လို့ရသော box ကိုယူပေးရပါမယ်။Short Code => Enter Your Short Code box ထဲတွင် ခုဏက copy ယူထားတဲ့ short code ကို paste ချပါမယ်။
 
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.4.png" alt="img-15.4">
+<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.4.png" alt="img-15.5">
 <figcaption align = "center"><b>img _ 15.4</b></figcaption>
 </figure>
 

@@ -286,7 +286,7 @@ Dashboard => Plugins => Add New ကိုနိုပ်ပြီး Classic Edi
 ထို့နောက် **img_15.1** အတိုင်း Title, Paragraph, Featured Image စသည်တို့ကို ဖြည့်ပြီး Publish Button ကိုနိုပ်ပါမယ်။
 
 <figure>
-<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.2.png" alt="img-15.2">
+<img src="https://cdn.jsdelivr.net/gh/kyawswaraye/wordpress-doc@main/docs/images/img-15.2A.png" alt="img-15.2">
 <figcaption align = "center"><b>img _ 15.2</b></figcaption>
 </figure>
 
